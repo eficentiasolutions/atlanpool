@@ -134,8 +134,8 @@ const TestimonialsSection = () => {
             <Image
               src="/atlanpool-logo.png"
               alt="AtlanPool Logo"
-              width={240}
-              height={160}
+              width={308}
+              height={240}
               className="h-16 w-auto"
             />
           </div>

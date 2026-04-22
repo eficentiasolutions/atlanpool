@@ -24,9 +24,9 @@ const Footer = () => {
                 <Image
                   src="/atlanpool-logo.png"
                   alt="AtlanPool"
-                  width={96}
-                  height={96}
-                  className="h-10 md:h-14 w-auto object-contain brightness-0 invert"
+                  width={308}
+                  height={240}
+                  className="h-14 md:h-20 w-auto object-contain brightness-0 invert"
                 />
               </div>
             </div>
