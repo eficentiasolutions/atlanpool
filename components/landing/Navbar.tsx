@@ -74,7 +74,7 @@ const Navbar = () => {
                 alt="AtlanPool"
                 width={308}
                 height={240}
-                className="h-16 md:h-20 w-auto object-contain"
+                className="h-20 md:h-28 w-auto object-contain"
                 style={{ width: 'auto' }}
               />
             </div>

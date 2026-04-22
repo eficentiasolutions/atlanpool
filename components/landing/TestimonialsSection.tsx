@@ -136,7 +136,7 @@ const TestimonialsSection = () => {
               alt="AtlanPool Logo"
               width={308}
               height={240}
-              className="h-16 w-auto"
+              className="h-28 w-auto"
             />
           </div>
           <span className="inline-block text-secondary font-semibold text-xs md:text-sm uppercase tracking-wider mb-3 md:mb-4">
