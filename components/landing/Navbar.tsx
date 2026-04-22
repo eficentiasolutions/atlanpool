@@ -1,0 +1,155 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
+
+const navLinks = [
+  { label: "Servicios", href: "/servicios", isPage: true },
+  { label: "Resultados", href: "#resultados" },
+  { label: "Precios", href: "#precios" },
+  { label: "FAQ", href: "#faq" },
+];
+
+const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const getHref = (link: typeof navLinks[number]) => {
+    if (link.isPage) return link.href;
+    return isHome ? link.href : `/${link.href}`;
+  };
+
+  const handleCtaClick = (e: React.MouseEvent) => {
+    if (isHome) {
+      e.preventDefault();
+      const event = new CustomEvent('plan-selected', { detail: 'Revisión Gratuita' });
+      window.dispatchEvent(event);
+      const targetElement = document.getElementById('formulario-contacto') || document.getElementById('contacto');
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+      setIsMobileMenuOpen(false);
+    } else {
+      e.preventDefault();
+      window.location.href = "/?plan=Revisión%20Gratuita#formulario-contacto";
+    }
+  };
+
+  const handleNavClick = (link: typeof navLinks[number]) => {
+    if (link.isPage) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
+  return (
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMobileMenuOpen
+        ? "bg-white/95 backdrop-blur-md shadow-sm"
+        : "bg-gradient-to-b from-white/90 to-transparent"
+        }`}
+    >
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between py-3 md:py-4">
+          {/* Logo */}
+          <a href="/" className="flex items-center gap-2" aria-label="Inicio">
+            <div className="transition-transform hover:scale-105 relative">
+              <Image
+                src="/atlanpool-logo.png"
+                alt="AtlanPool"
+                width={160}
+                height={56}
+                className="h-12 md:h-14 w-auto object-contain"
+                style={{ width: 'auto' }}
+              />
+            </div>
+          </a>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={getHref(link)}
+                className={`font-medium transition-colors hover:text-brand-primary ${isScrolled || isMobileMenuOpen ? "text-foreground" : "text-brand-dark/90"
+                  }`}
+              >
+                {link.label}
+              </a>
+            ))}
+            <a
+              href={getHref({ href: "#contacto", label: "", isPage: false })}
+              onClick={handleCtaClick}
+              className={`px-6 py-2.5 rounded-xl font-bold transition-all ${isScrolled || isMobileMenuOpen
+                ? "bg-primary text-white hover:bg-primary/90"
+                : "bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/20"
+                }`}
+            >
+              Revisión Gratuita
+            </a>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+            className={`md:hidden p-2 rounded-lg ${isScrolled || isMobileMenuOpen ? "text-foreground" : "text-brand-dark"
+              }`}
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="md:hidden bg-white rounded-2xl shadow-lg p-6 mb-4"
+          >
+            <div className="flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={getHref(link)}
+                  onClick={() => handleNavClick(link)}
+                  className="text-foreground font-medium py-2 hover:text-primary transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+              <a
+                href={isHome ? "#contacto" : "/#contacto"}
+                onClick={handleCtaClick}
+                className="btn-glow text-center mt-2"
+              >
+                Revisión Gratuita
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </div>
+    </motion.nav>
+  );
+};
+
+export default Navbar;
