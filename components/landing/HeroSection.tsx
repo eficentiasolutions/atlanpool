@@ -7,23 +7,23 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen overflow-hidden bg-slate-50">
-      {/* Background Image - Optimized for LCP with placeholder */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-blue-50 animate-pulse-slow" />
+      {/* Background Image - Optimized for LCP */}
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/80 to-brand-teal/60 animate-pulse-slow" />
       <Image
-        src="/hero-pool-maintenance-v2.png"
+        src="/hero-pool.jpg"
         alt="Piscina cristalina mantenida profesionalmente por AtlanPool"
         fill
         priority
-        className="object-cover object-bottom md:object-center"
+        className="object-cover object-center"
         sizes="100vw"
         placeholder="blur"
         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAB//2Q=="
       />
 
-      {/* Light/Blue Filter Effect - Fresh & Premium */}
-      <div className="absolute inset-0 bg-cyan-50/30 mix-blend-overlay" />
-      <div className="absolute inset-0 bg-gradient-to-tr from-white/60 via-transparent to-white/40" />
-      <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
+      {/* AtlanPool brand overlay — navy vignette + light center */}
+      <div className="absolute inset-0 bg-brand-dark/40" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/50 via-transparent to-brand-teal/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-white via-white/30 to-transparent" />
 
       {/* Water ripple effect - Subtle */}
       <div className="water-ripple opacity-10" />
