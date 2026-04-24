@@ -74,7 +74,7 @@ const Navbar = () => {
                 alt="AtlanPool"
                 width={448}
                 height={298}
-                className="w-40 md:w-56 h-auto object-contain"
+                className="w-32 md:w-52 h-auto object-contain"
               />
             </div>
           </a>
@@ -94,10 +94,11 @@ const Navbar = () => {
             <a
               href={getHref({ href: "#contacto", label: "", isPage: false })}
               onClick={handleCtaClick}
-              className={`px-6 py-2.5 rounded-xl font-bold transition-all ${isScrolled || isMobileMenuOpen
-                ? "bg-primary text-white hover:bg-primary/90"
-                : "bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/20"
+              className={`px-6 py-2.5 rounded-xl font-bold transition-all text-white hover:opacity-90 hover:scale-105 ${isScrolled || isMobileMenuOpen
+                ? "shadow-sm"
+                : "shadow-lg shadow-primary/20"
                 }`}
+              style={{ background: "linear-gradient(135deg, hsl(var(--brand-primary)) 0%, hsl(var(--brand-teal)) 100%)" }}
             >
               Revisión Gratuita
             </a>

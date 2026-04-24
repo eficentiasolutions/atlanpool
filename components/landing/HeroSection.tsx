@@ -10,20 +10,18 @@ const HeroSection = () => {
       {/* Background Image - Optimized for LCP with placeholder */}
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-blue-50 animate-pulse-slow" />
       <Image
-        src="/hero-pool-maintenance-v2.png"
+        src="/hero-pool.jpg"
         alt="Piscina cristalina mantenida profesionalmente por AtlanPool"
         fill
         priority
-        className="object-cover object-bottom md:object-center"
+        className="object-cover object-center"
         sizes="100vw"
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAB//2Q=="
       />
 
-      {/* Light/Blue Filter Effect - Fresh & Premium */}
-      <div className="absolute inset-0 bg-cyan-50/30 mix-blend-overlay" />
-      <div className="absolute inset-0 bg-gradient-to-tr from-white/60 via-transparent to-white/40" />
-      <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent" />
+      {/* Subtle overlay — keeps image vivid while ensuring text readability */}
+      <div className="absolute inset-0 bg-brand-dark/15" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/20 via-transparent to-brand-teal/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent" />
 
       {/* Water ripple effect - Subtle */}
       <div className="water-ripple opacity-10" />

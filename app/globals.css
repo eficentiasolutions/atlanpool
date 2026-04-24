@@ -102,7 +102,8 @@
 
   /* Shadow Glow Button */
   .btn-glow {
-    @apply relative px-6 py-3 md:px-8 md:py-4 bg-secondary text-secondary-foreground font-bold rounded-xl transition-all duration-300 ease-out transform text-sm md:text-base;
+    @apply relative px-6 py-3 md:px-8 md:py-4 text-white font-bold rounded-xl transition-all duration-300 ease-out transform text-sm md:text-base;
+    background: linear-gradient(135deg, hsl(var(--brand-primary)) 0%, hsl(var(--brand-teal)) 100%);
     box-shadow: var(--shadow-glow);
   }
 
@@ -113,11 +114,12 @@
 
   /* Solid Button (No Glow) */
   .btn-solid {
-    @apply relative px-6 py-3 md:px-8 md:py-4 bg-primary text-primary-foreground font-bold rounded-xl transition-all duration-300 ease-out transform text-sm md:text-base;
+    @apply relative px-6 py-3 md:px-8 md:py-4 text-white font-bold rounded-xl transition-all duration-300 ease-out transform text-sm md:text-base;
+    background: linear-gradient(135deg, hsl(var(--brand-primary)) 0%, hsl(var(--brand-teal)) 100%);
   }
 
   .btn-solid:hover {
-    @apply scale-105 bg-primary/90;
+    @apply scale-105 opacity-90;
   }
 
   .btn-glow::before {

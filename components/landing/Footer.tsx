@@ -26,7 +26,7 @@ const Footer = () => {
                   alt="AtlanPool"
                   width={448}
                   height={298}
-                  className="w-36 md:w-52 h-auto object-contain brightness-0 invert"
+                  className="w-36 md:w-56 h-auto object-contain brightness-0 invert"
                 />
               </div>
             </div>
