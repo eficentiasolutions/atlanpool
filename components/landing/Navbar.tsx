@@ -72,9 +72,9 @@ const Navbar = () => {
               <Image
                 src="/atlanpool-logo.png"
                 alt="AtlanPool"
-                width={576}
-                height={390}
-                className="w-44 md:w-72 h-auto object-contain"
+                width={448}
+                height={298}
+                className="w-40 md:w-56 h-auto object-contain"
               />
             </div>
           </a>
@@ -95,8 +95,8 @@ const Navbar = () => {
               href={getHref({ href: "#contacto", label: "", isPage: false })}
               onClick={handleCtaClick}
               className={`px-6 py-2.5 rounded-xl font-bold transition-all ${isScrolled || isMobileMenuOpen
-                ? "bg-secondary text-secondary-foreground hover:bg-secondary/90"
-                : "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-lg shadow-secondary/30"
+                ? "bg-primary text-white hover:bg-primary/90"
+                : "bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/20"
                 }`}
             >
               Revisión Gratuita
