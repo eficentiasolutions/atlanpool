@@ -230,7 +230,7 @@ export default function MantenimientoPiscinasTenerife() {
           <section className="relative min-h-[80vh] md:min-h-[70vh] overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-blue-50" />
             <Image
-              src="/hero-pool-maintenance-v2.png"
+              src="/hero-pool.jpg"
               alt="Piscina cristalina con servicio de mantenimiento profesional en Tenerife"
               fill
               priority
