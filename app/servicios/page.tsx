@@ -8,7 +8,7 @@ import WhatsAppButton from "@/components/landing/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Servicios de Piscinas en Tenerife | AtlanPool",
-  description: "Descubre todos los servicios de piscinas de AtlanPool en Tenerife. Mantenimiento profesional, limpieza integral y más. cientos de familias satisfechas. ¡Llama ya!",
+  description: "Todos los servicios de piscinas de AtlanPool en Tenerife: mantenimiento, limpieza y reparaciones. Cientos de familias satisfechas. ¡Primera revisión GRATIS!",
   keywords: [
     "servicios de piscinas en Tenerife",
     "mantenimiento de piscinas en Tenerife",

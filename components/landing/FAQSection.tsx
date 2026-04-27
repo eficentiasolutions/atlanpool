@@ -102,11 +102,6 @@ const FAQSection = () => {
 
   return (
     <>
-      {/* FAQPage Schema Markup para SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       <section ref={ref} className="py-12 md:py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4 relative">
         {/* Background Watermark */}

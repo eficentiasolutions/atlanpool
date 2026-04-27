@@ -46,6 +46,14 @@ const serviceSchema = {
   name: "Mantenimiento de Piscinas en Tenerife",
   description: "Servicio profesional de mantenimiento de piscinas en Tenerife. Incluye limpieza, balance químico, revisión de equipos y mantenimiento preventivo. Más de cientos de familias satisfechas.",
   url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-tenerife",
+
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: 5.0,
+      reviewCount: 10,
+      bestRating: 5,
+      worstRating: 1,
+    },
   provider: {
     "@type": "LocalBusiness",
     "@id": "https://www.atlanpool.es",
@@ -58,15 +66,7 @@ const serviceSchema = {
       addressLocality: "Santa Cruz de Tenerife",
       addressRegion: "Tenerife",
       addressCountry: "ES",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "10",
-      bestRating: "5",
-      worstRating: "1",
-    },
-    sameAs: [
+    },    sameAs: [
       "https://www.facebook.com/share/1CMksZtzTW/",
       "https://www.instagram.com/atlanpool.es",
       "https://www.google.com/maps/search/?api=1&query=AtlanPool&query_place_id=ChIJ5y8Xg1PIRGMRXtzZcEEx0mA",

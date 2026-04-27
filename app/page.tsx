@@ -79,8 +79,8 @@ const ContactSection = dynamic(
 );
 
 export const metadata: Metadata = {
-  title: "AtlanPool | Mantenimiento Profesional de Piscinas en Santa Cruz de Tenerife",
-  description: "Mantenimiento, limpieza y reparación de piscinas en Santa Cruz de Tenerife. Recupera tu tiempo libre con AtlanPool. Primera inspección de balance químico GRATIS. Agua cristalina garantizada.",
+  title: "Mantenimiento de Piscinas en Tenerife | AtlanPool",
+  description: "Mantenimiento profesional de piscinas en Santa Cruz de Tenerife. Balance químico, limpieza y reparaciones. Primera revisión GRATIS. Agua cristalina garantizada.",
   keywords: [
     "mantenimiento de piscinas en Santa Cruz de Tenerife",
     "mantenimiento piscinas Tenerife",
@@ -111,7 +111,9 @@ const localBusinessSchema = {
   email: "info@atlanpool.es",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Santa Cruz de Tenerife",
     addressLocality: "Santa Cruz de Tenerife",
+    postalCode: "38001",
     addressRegion: "Tenerife",
     addressCountry: "ES",
   },
@@ -147,7 +149,18 @@ const localBusinessSchema = {
     { "@type": "City", name: "Arafo" },
     { "@type": "City", name: "Fasnia" },
   ],
-  sameAs: [],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: 5.0,
+    reviewCount: 10,
+    bestRating: 5,
+    worstRating: 1,
+  },
+  sameAs: [
+    "https://www.facebook.com/share/1CMksZtzTW/",
+    "https://www.instagram.com/atlanpool.es",
+    "https://www.google.com/maps/search/?api=1&query=AtlanPool&query_place_id=ChIJ5y8Xg1PIRGMRXtzZcEEx0mA",
+  ],
 };
 
 export default function HomePage() {

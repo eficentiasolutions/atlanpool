@@ -41,14 +41,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Páginas geográficas - keywords locales de media prioridad
     {
-      url: `${baseUrl}/servicios/mantenimiento-piscinas-santa-cruz-tenerife`,
-      lastModified: new Date('2026-04-22'),
+      url: `${baseUrl}/servicios/mantenimiento-piscinas-norte-tenerife`,
+      lastModified: new Date('2026-04-25'),
       changeFrequency: 'monthly',
       priority: 0.75,
     },
     {
-      url: `${baseUrl}/servicios/mantenimiento-piscinas-la-laguna`,
-      lastModified: new Date('2026-04-22'),
+      url: `${baseUrl}/servicios/mantenimiento-piscinas-puerto-de-la-cruz`,
+      lastModified: new Date('2026-04-25'),
       changeFrequency: 'monthly',
       priority: 0.75,
     },

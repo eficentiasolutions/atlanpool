@@ -34,10 +34,10 @@ const Footer = () => {
               Redefinimos la experiencia de tener piscina. Nuestro enfoque técnico y proactivo garantiza un agua saludable y cristalina siempre, para que tú solo te ocupes de lo importante: disfrutarla.
             </p>
             <div className="flex gap-3 md:gap-4">
-              {/* Redes sociales — se activarán cuando estén disponibles */}
+              {/* Redes sociales */}
               {[
-                { Icon: Facebook, href: "#", label: "Facebook" },
-                { Icon: Instagram, href: "#", label: "Instagram" },
+                { Icon: Facebook, href: "https://www.facebook.com/share/1CMksZtzTW/", label: "Facebook" },
+                { Icon: Instagram, href: "https://www.instagram.com/atlanpool.es", label: "Instagram" },
                 { Icon: TikTokIcon, href: "#", label: "TikTok" }
               ].map(({ Icon, href, label }, index) => (
                 <a
@@ -51,6 +51,21 @@ const Footer = () => {
                   <Icon className="w-4 h-4 md:w-5 md:h-5" />
                 </a>
               ))}
+            </div>
+
+            {/* NAP — Name, Address, Phone para Local SEO */}
+            <div className="mt-4 space-y-1 text-white/60 text-xs md:text-sm">
+              <p>📍 Santa Cruz de Tenerife, Tenerife</p>
+              <p>
+                <a href="tel:+34643902918" className="hover:text-white transition-colors">
+                  📞 +34 643 902 918
+                </a>
+              </p>
+              <p>
+                <a href="mailto:info@atlanpool.es" className="hover:text-white transition-colors">
+                  ✉️ info@atlanpool.es
+                </a>
+              </p>
             </div>
           </div>
 

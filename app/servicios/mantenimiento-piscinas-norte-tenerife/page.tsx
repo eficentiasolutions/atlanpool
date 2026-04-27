@@ -40,6 +40,14 @@ const serviceSchema = {
   name: "Mantenimiento de Piscinas en el Santa Cruz de Tenerife y alrededores",
   description: "Servicio especializado en mantenimiento y limpieza de piscinas en el Santa Cruz de Tenerife y alrededores. Cubre Santa Cruz de Tenerife, La Laguna, El Rosario, La Laguna, Candelaria y toda la zona norte de la isla.",
   url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-norte-tenerife",
+
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: 5.0,
+      reviewCount: 10,
+      bestRating: 5,
+      worstRating: 1,
+    },
   provider: {
     "@type": "LocalBusiness",
     "@id": "https://www.atlanpool.es",
@@ -52,15 +60,7 @@ const serviceSchema = {
       addressLocality: "Santa Cruz de Tenerife",
       addressRegion: "Tenerife",
       addressCountry: "ES",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "10",
-      bestRating: "5",
-      worstRating: "1",
-    },
-  },
+    },  },
   areaServed: [
     { "@type": "City", name: "Santa Cruz de Tenerife" },
     { "@type": "City", name: "La Laguna" },
@@ -142,7 +142,7 @@ const faqSchema = {
 };
 
 const municipios = [
-  { name: "Santa Cruz de Tenerife", link: "/servicios/mantenimiento-piscinas-puerto-de-la-cruz" },
+  { name: "Santa Cruz de Tenerife", link: "/servicios/mantenimiento-piscinas-tenerife" },
   { name: "La Laguna", link: null },
   { name: "El Rosario", link: null },
   { name: "San Cristóbal de La Laguna", link: null },

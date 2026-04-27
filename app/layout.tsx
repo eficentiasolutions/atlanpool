@@ -91,7 +91,11 @@ const organizationSchema = {
     addressLocality: "Santa Cruz de Tenerife",
     addressCountry: "ES",
   },
-  sameAs: [],
+  sameAs: [
+    "https://www.facebook.com/share/1CMksZtzTW/",
+    "https://www.instagram.com/atlanpool.es",
+    "https://www.google.com/maps/search/?api=1&query=AtlanPool&query_place_id=ChIJ5y8Xg1PIRGMRXtzZcEEx0mA",
+  ],
 };
 
 export default function RootLayout({
@@ -102,9 +106,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={poppins.variable}>
       <head>
-        {/* Resource hints for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Resource hints — next/font self-hosts fonts, no external preconnect needed */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <script
           type="application/ld+json"

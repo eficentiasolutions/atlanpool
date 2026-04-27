@@ -40,6 +40,14 @@ const serviceSchema = {
   name: "Mantenimiento de Piscinas en Santa Cruz de Tenerife",
   description: "Servicio profesional de mantenimiento y limpieza de piscinas en Santa Cruz de Tenerife, Tenerife. Técnico local con visitas semanales, balance químico completo y revisión de equipos.",
   url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-puerto-de-la-cruz",
+
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: 5.0,
+      reviewCount: 10,
+      bestRating: 5,
+      worstRating: 1,
+    },
   provider: {
     "@type": "LocalBusiness",
     "@id": "https://www.atlanpool.es",
@@ -52,15 +60,7 @@ const serviceSchema = {
       addressLocality: "Santa Cruz de Tenerife",
       addressRegion: "Tenerife",
       addressCountry: "ES",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "10",
-      bestRating: "5",
-      worstRating: "1",
-    },
-  },
+    },  },
   areaServed: {
     "@type": "City",
     name: "Santa Cruz de Tenerife",
@@ -184,7 +184,7 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="https://wa.me/34643902918?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20Puerto%20de%20la%20Cruz"
+                    href="https://wa.me/34643902918?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20Santa%20Cruz%20de%20Tenerife"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center rounded-xl bg-[#25D366] px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 hover:bg-[#128C7E] transition-all"
@@ -440,7 +440,7 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://wa.me/34643902918?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20Puerto%20de%20la%20Cruz"
+                  href="https://wa.me/34643902918?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20Santa%20Cruz%20de%20Tenerife"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-xl bg-[#25D366] px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 hover:bg-[#128C7E] transition-all"
