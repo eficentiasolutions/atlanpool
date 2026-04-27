@@ -72,9 +72,9 @@ const Navbar = () => {
               <Image
                 src="/atlanpool-logo.png"
                 alt="AtlanPool"
-                width={448}
-                height={298}
-                className="w-32 md:w-52 h-auto object-contain"
+                width={720}
+                height={244}
+                className="w-36 md:w-60 h-auto object-contain"
               />
             </div>
           </a>
