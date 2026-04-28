@@ -11,6 +11,12 @@ const nextConfig: NextConfig = {
         destination: 'https://www.atlanpool.es/:path*',
         permanent: true,
       },
+      // Norte → Sur (zone update)
+      {
+        source: '/servicios/mantenimiento-piscinas-norte-tenerife',
+        destination: '/servicios/mantenimiento-piscinas-sur-tenerife',
+        permanent: true,
+      },
       // Old service URLs → estructura actual bajo /servicios/
       {
         source: '/mantenimiento-piscinas-tenerife',

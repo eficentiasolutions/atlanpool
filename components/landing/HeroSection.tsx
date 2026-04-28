@@ -57,7 +57,7 @@ const HeroSection = () => {
                 </span>
               </p>
               <p className="text-brand-primary/80 text-xs sm:text-sm mt-2 font-medium tracking-wide uppercase">
-                Mantenimiento de piscinas en Santa Cruz de Tenerife • Solo este mes
+                Mantenimiento de piscinas en el Sur de Tenerife • Solo este mes
               </p>
             </div>
           </div>

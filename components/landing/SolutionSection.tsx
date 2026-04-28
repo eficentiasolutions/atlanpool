@@ -89,7 +89,7 @@ const SolutionSection = () => {
             <span className="gradient-text">Oasis Sin Esfuerzo</span>
           </h2>
           <p className="text-muted-foreground text-sm md:text-lg max-w-2xl mx-auto px-2">
-            Nuestro equipo de expertos en mantenimiento de piscinas en Santa Cruz de Tenerife
+            Nuestro equipo de expertos en mantenimiento de piscinas en el Sur de Tenerife
             se encarga de todo para que tú solo tengas que disfrutar.
           </p>
         </motion.div>

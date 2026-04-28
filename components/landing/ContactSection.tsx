@@ -131,7 +131,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground text-sm md:text-base">Zonas</h4>
-                  <p className="text-muted-foreground text-xs md:text-base">Santa Cruz de Tenerife y alrededores</p>
+                  <p className="text-muted-foreground text-xs md:text-base">Sur de Tenerife (Adeje, Arona, Granadilla...)</p>
                 </div>
               </div>
 

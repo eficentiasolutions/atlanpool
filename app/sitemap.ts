@@ -41,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Páginas geográficas - keywords locales de media prioridad
     {
-      url: `${baseUrl}/servicios/mantenimiento-piscinas-norte-tenerife`,
+      url: `${baseUrl}/servicios/mantenimiento-piscinas-sur-tenerife`,
       lastModified: new Date('2026-04-25'),
       changeFrequency: 'monthly',
       priority: 0.75,

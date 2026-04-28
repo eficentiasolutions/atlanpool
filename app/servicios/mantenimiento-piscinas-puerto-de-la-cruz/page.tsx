@@ -102,7 +102,7 @@ const faqSchema = {
       name: "¿Ofrecéis mantenimiento de piscinas en Santa Cruz de Tenerife?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sí, AtlanPool es una empresa de mantenimiento de piscinas especializada en el Santa Cruz de Tenerife y alrededores y con base de operaciones en Santa Cruz de Tenerife. Realizamos visitas semanales o quincenales con el mismo técnico de referencia que conoce tu piscina a fondo. Cubrimos Martiánez, La Paz, Punta Brava, El Mayorazgo, La Laguna, El Rosario y toda la zona.",
+        text: "Sí, AtlanPool es una empresa de mantenimiento de piscinas especializada en el Santa Cruz de Tenerife y alrededores y con base de operaciones en Santa Cruz de Tenerife. Realizamos visitas semanales o quincenales con el mismo técnico de referencia que conoce tu piscina a fondo. Cubrimos Costa Adeje, Torviscas, Fañabé, El Duque, San Eugenio, Playa Paraíso y toda la zona.",
       },
     },
     {
@@ -118,7 +118,7 @@ const faqSchema = {
       name: "¿Qué zonas de Santa Cruz de Tenerife cubrís?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "En Santa Cruz de Tenerife cubrimos todas las zonas: Martiánez, La Paz, Punta Brava, El Mayorazgo, La Ranilla, Loro Parque, San Felipe, San Telmo, La Laguna, El Rosario, Cruz Santa y alrededores. Si tienes dudas sobre si llegamos a tu dirección concreta, llámanos al 643 902 918.",
+        text: "En Santa Cruz de Tenerife cubrimos todas las zonas: Costa Adeje, Torviscas, Fañabé, El Duque, San Eugenio, Las Américas, Playa Paraíso, Alcalá, Playa San Juan, Golf del Sur, El Médano y alrededores. Si tienes dudas sobre si llegamos a tu dirección concreta, llámanos al 643 902 918.",
       },
     },
     {
@@ -126,7 +126,7 @@ const faqSchema = {
       name: "¿Con qué frecuencia necesita mantenimiento una piscina en Santa Cruz de Tenerife?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "En Santa Cruz de Tenerife, con el clima atlántico del Santa Cruz de Tenerife y alrededores, recomendamos visitas semanales. El viento del norte puede depositar polvo y residuos en el agua, y las temperaturas suaves permiten el uso de la piscina prácticamente todo el año. Un mantenimiento semanal garantiza agua siempre en perfectas condiciones.",
+        text: "En Santa Cruz de Tenerife, con el clima atlántico del Sur de Tenerife, recomendamos visitas semanales. El sol intenso y la calima pueden alterar el balance químico y residuos en el agua, y las temperaturas suaves permiten el uso de la piscina prácticamente todo el año. Un mantenimiento semanal garantiza agua siempre en perfectas condiciones.",
       },
     },
   ],
@@ -170,7 +170,7 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary rounded-full px-4 py-2 text-sm font-semibold mb-6">
                   <MapPin className="w-4 h-4" />
-                  Santa Cruz de Tenerife · Santa Cruz de Tenerife y alrededores
+                  Adeje · Costa Adeje y zona sur
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-800 leading-[1.1] mb-6 tracking-tight">
@@ -213,7 +213,7 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
                   <span className="text-secondary">en Santa Cruz de Tenerife</span>
                 </h2>
                 <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                  Conocemos las particularidades del Santa Cruz de Tenerife y alrededores: el viento, la calima, la humedad atlántica y el uso intensivo de las piscinas durante todo el año
+                  Conocemos las particularidades del Sur de Tenerife: el sol intenso, la calima y el uso intensivo durante todo el año y el uso intensivo de las piscinas durante todo el año
                 </p>
               </div>
 
@@ -222,7 +222,7 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
                   {
                     icon: MapPin,
                     title: "Base Local en el Norte",
-                    desc: "Operamos desde Santa Cruz de Tenerife. Conocemos cada barrio, cada urbanización y las condiciones específicas del clima atlántico del Santa Cruz de Tenerife y alrededores.",
+                    desc: "Operamos desde Santa Cruz de Tenerife. Conocemos cada barrio, cada urbanización y las condiciones específicas del clima atlántico del Sur de Tenerife.",
                   },
                   {
                     icon: Clock,
@@ -362,7 +362,7 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
                 {[
                   {
                     q: "¿Ofrecéis mantenimiento de piscinas en Santa Cruz de Tenerife?",
-                    a: "Sí, AtlanPool es una empresa de mantenimiento de piscinas con base en Santa Cruz de Tenerife y especializada en el Santa Cruz de Tenerife y alrededores. Realizamos visitas semanales o quincenales con técnico fijo. Cubrimos Martiánez, La Paz, Punta Brava, El Mayorazgo, La Laguna, El Rosario y toda la zona norte.",
+                    a: "Sí, AtlanPool es una empresa de mantenimiento de piscinas con base en Santa Cruz de Tenerife y especializada en el Santa Cruz de Tenerife y alrededores. Realizamos visitas semanales o quincenales con técnico fijo. Cubrimos Costa Adeje, Torviscas, Fañabé, El Duque, San Eugenio, Playa Paraíso y toda la zona norte.",
                   },
                   {
                     q: "¿Cuánto cuesta el mantenimiento de una piscina en Santa Cruz de Tenerife?",

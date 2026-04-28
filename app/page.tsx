@@ -80,11 +80,11 @@ const ContactSection = dynamic(
 
 export const metadata: Metadata = {
   title: "Mantenimiento de Piscinas en Tenerife | AtlanPool",
-  description: "Mantenimiento profesional de piscinas en Santa Cruz de Tenerife. Balance químico, limpieza y reparaciones. Primera revisión GRATIS. Agua cristalina garantizada.",
+  description: "Mantenimiento profesional de piscinas en el Sur de Tenerife: Adeje, Arona, Granadilla y más. Balance químico, limpieza y reparaciones. Primera revisión GRATIS.",
   keywords: [
-    "mantenimiento de piscinas en Santa Cruz de Tenerife",
-    "mantenimiento piscinas Tenerife",
-    "limpieza piscinas Santa Cruz",
+    "mantenimiento de piscinas en el sur de Tenerife",
+    "mantenimiento piscinas sur Tenerife",
+    "limpieza piscinas sur Tenerife",
     "servicio piscina Tenerife",
     "balance químico piscina",
     "mantenimiento piscina precio",
@@ -93,8 +93,8 @@ export const metadata: Metadata = {
     canonical: "https://www.atlanpool.es",
   },
   openGraph: {
-    title: "AtlanPool | Mantenimiento de Piscinas en Santa Cruz de Tenerife",
-    description: "Servicio profesional de mantenimiento de piscinas en Santa Cruz de Tenerife. Recupera tu tiempo libre. Primera inspección GRATIS.",
+    title: "Mantenimiento de Piscinas en el Sur de Tenerife | AtlanPool",
+    description: "Servicio profesional de mantenimiento de piscinas en el Sur de Tenerife. Recupera tu tiempo libre. Primera revisión GRATIS.",
     url: "https://www.atlanpool.es",
   },
 };

@@ -70,18 +70,16 @@ const serviceSchema = {
     ],
   },
   areaServed: [
-    { "@type": "City", name: "Santa Cruz de Tenerife" },
-    { "@type": "City", name: "La Laguna" },
-    { "@type": "City", name: "El Rosario" },
-    { "@type": "City", name: "San Cristóbal de La Laguna" },
-    { "@type": "City", name: "Candelaria" },
-    { "@type": "City", name: "El Sauzal" },
-    { "@type": "City", name: "Santa Úrsula" },
-    { "@type": "City", name: "Güímar" },
-    { "@type": "City", name: "Tegueste" },
-    { "@type": "City", name: "San Juan de la Rambla" },
-    { "@type": "City", name: "Arafo" },
-    { "@type": "City", name: "La Esperanza" },
+    { "@type": "City", name: "Adeje" },
+    { "@type": "City", name: "Arona" },
+    { "@type": "City", name: "Granadilla de Abona" },
+    { "@type": "City", name: "San Miguel de Abona" },
+    { "@type": "City", name: "Guía de Isora" },
+    { "@type": "City", name: "Santiago del Teide" },
+    { "@type": "City", name: "Vilaflor" },
+    { "@type": "City", name: "Arico" },
+    { "@type": "City", name: "Los Cristianos" },
+    { "@type": "City", name: "Costa Adeje" },
   ],
 };
 
@@ -164,7 +162,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "¿En qué zonas del Santa Cruz de Tenerife y alrededores limpiáis piscinas?",
+      name: "¿En qué zonas del Sur de Tenerife limpiáis piscinas?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "AtlanPool ofrece servicio de limpieza de piscinas en el Santa Cruz de Tenerife y alrededores. Cubrimos Santa Cruz de Tenerife, La Laguna, El Rosario, San Cristóbal de La Laguna, Candelaria, El Sauzal, Santa Úrsula, Güímar, Tegueste, San Juan de la Rambla, La Esperanza, Arafo y muchas zonas estratégicas como La Paz, Martiánez, El Mayorazgo, La Perdoma, Aguamansa, La Longuera, Cruz Santa, Mesa del Mar, Agua García y San Marcos. Si tu zona no aparece, consúltanos.",
@@ -468,7 +466,7 @@ export default function LimpiezaPiscinasTenerife() {
                     a: "Utilizamos exclusivamente productos profesionales certificados de máxima calidad. Nuestros alguicidas, floculantes, desinfectantes y productos de limpieza de superficies son seguros para la salud de bañistas, niños y mascotas. Trabajamos con las mejores marcas del mercado.",
                   },
                   {
-                    q: "¿En qué zonas del Santa Cruz de Tenerife y alrededores limpiáis piscinas?",
+                    q: "¿En qué zonas del Sur de Tenerife limpiáis piscinas?",
                     a: "AtlanPool ofrece servicio de limpieza de piscinas en el Santa Cruz de Tenerife y alrededores. Cubrimos Santa Cruz de Tenerife, La Laguna, El Rosario, San Cristóbal de La Laguna, Candelaria, El Sauzal, Santa Úrsula, Güímar, Tegueste, San Juan de la Rambla, La Esperanza, Arafo y muchas más zonas del norte. Si tu zona no aparece, consúltanos.",
                   },
                 ].map((faq) => (
@@ -494,7 +492,7 @@ export default function LimpiezaPiscinasTenerife() {
                   Limpieza de piscinas en el <span className="gradient-text">Santa Cruz de Tenerife y alrededores</span>
                 </h2>
                 <p className="text-muted-foreground text-lg">
-                  Servicio profesional de limpieza de piscinas en los municipios y zonas del Santa Cruz de Tenerife y alrededores
+                  Servicio profesional de limpieza de piscinas en los municipios del Sur de Tenerife
                 </p>
               </div>
 
@@ -534,7 +532,7 @@ export default function LimpiezaPiscinasTenerife() {
               </div>
 
               <p className="text-center text-muted-foreground text-sm mt-8 max-w-2xl mx-auto">
-                ¿No ves tu zona? Trabajamos en todo el Santa Cruz de Tenerife y alrededores. <a href="#contacto" className="text-secondary font-semibold hover:underline">Consúltanos</a> para confirmar disponibilidad en tu ubicación.
+                ¿No ves tu zona? Trabajamos en todo el Sur de Tenerife. <a href="#contacto" className="text-secondary font-semibold hover:underline">Consúltanos</a> para confirmar disponibilidad en tu ubicación.
               </p>
             </div>
           </section>
