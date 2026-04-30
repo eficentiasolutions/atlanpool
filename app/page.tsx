@@ -99,6 +99,62 @@ export const metadata: Metadata = {
   },
 };
 
+// FAQPage Schema Markup para SEO
+const faqPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Qué incluye la revisión gratuita?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "La revisión gratuita incluye un análisis completo del balance químico de tu piscina (pH, cloro, alcalinidad, dureza), revisión visual del estado general, filtros y sistema de circulación, y un informe detallado con recomendaciones personalizadas. Sin compromiso de contratación.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Con qué frecuencia necesita mantenimiento mi piscina?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "En Tenerife, debido a nuestro clima privilegiado, la piscina se disfruta todo el año. Recomendamos mantenimiento semanal para garantizar la calidad del agua constante, aunque nuestros planes se adaptan si tienes un uso más estacional.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Qué pasa si no estoy satisfecho con el servicio?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ofrecemos garantía de satisfacción total. Si en los primeros 30 días no estás completamente satisfecho, te devolvemos el 100% de tu dinero sin preguntas. Además, si detectas cualquier problema entre visitas, lo solucionamos sin coste adicional.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Utilizan productos seguros para niños y mascotas?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolutamente. Todos nuestros productos están certificados y son seguros para uso en piscinas familiares. Además, ofrecemos opciones eco-friendly para familias con sensibilidades especiales.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Trabajan en mi zona?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "AtlanPool cubre toda la zona sur de Tenerife: Adeje, Costa Adeje, La Caleta, Las Américas, San Eugenio, Los Cristianos, Arona, El Médano, Abades, Granadilla de Abona, San Miguel de Abona, Golf del Sur y alrededores. Contáctanos para confirmar disponibilidad en tu ubicación específica.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Puedo cambiar o cancelar mi plan en cualquier momento?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "El plan de mantenimiento premium tiene una permanencia de 12 meses, si en los primeros 30 días no estás conforme podrás cancelarlo sin haber pagado nada, ya que realizamos el servicio a mes vencido.",
+      },
+    },
+  ],
+};
+
 // Schema Markup JSON-LD para LocalBusiness
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -138,16 +194,15 @@ const localBusinessSchema = {
   ],
   priceRange: "€€",
   areaServed: [
-    { "@type": "City", name: "Santa Cruz de Tenerife" },
-    { "@type": "City", name: "San Cristóbal de La Laguna" },
-    { "@type": "City", name: "El Rosario" },
-    { "@type": "City", name: "Candelaria" },
-    { "@type": "City", name: "Güímar" },
-    { "@type": "City", name: "Tegueste" },
-    { "@type": "City", name: "Santa Úrsula" },
-    { "@type": "City", name: "La Laguna" },
-    { "@type": "City", name: "Arafo" },
-    { "@type": "City", name: "Fasnia" },
+    { "@type": "City", name: "Adeje" },
+    { "@type": "City", name: "La Caleta" },
+    { "@type": "City", name: "Las Américas" },
+    { "@type": "City", name: "San Eugenio" },
+    { "@type": "City", name: "El Médano" },
+    { "@type": "City", name: "Abades" },
+    { "@type": "City", name: "Granadilla de Abona" },
+    { "@type": "City", name: "San Miguel de Abona" },
+    { "@type": "City", name: "Golf del Sur" },
   ],
   aggregateRating: {
     "@type": "AggregateRating",
@@ -169,6 +224,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
       />
       <div className="min-h-screen bg-background">
         <Navbar />

@@ -55,7 +55,7 @@ const Footer = () => {
 
             {/* NAP — Name, Address, Phone para Local SEO */}
             <div className="mt-4 space-y-1 text-white/60 text-xs md:text-sm">
-              <p>📍 Santa Cruz de Tenerife, Tenerife</p>
+              <p>📍 Sur de Tenerife (Adeje, Las Américas, El Médano...)</p>
               <p>
                 <a href="tel:+34631230569" className="hover:text-white transition-colors">
                   📞 +34 631 230 569

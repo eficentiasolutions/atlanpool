@@ -6,62 +6,6 @@ import { useRef, useState } from "react";
 import { ChevronDown, HelpCircle } from "lucide-react";
 import Image from "next/image";
 
-// FAQPage Schema Markup para SEO
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Qué incluye la revisión gratuita?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "La revisión gratuita incluye un análisis completo del balance químico de tu piscina (pH, cloro, alcalinidad, dureza), revisión visual del estado general, filtros y sistema de circulación, y un informe detallado con recomendaciones personalizadas. Sin compromiso de contratación.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Con qué frecuencia necesita mantenimiento mi piscina?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "En Tenerife, debido a nuestro clima privilegiado, la piscina se disfruta todo el año. Recomendamos mantenimiento semanal para garantizar la calidad del agua constante, aunque nuestros planes se adaptan si tienes un uso más estacional.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué pasa si no estoy satisfecho con el servicio?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Ofrecemos garantía de satisfacción total. Si en los primeros 30 días no estás completamente satisfecho, te devolvemos el 100% de tu dinero sin preguntas. Además, si detectas cualquier problema entre visitas, lo solucionamos sin coste adicional.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Utilizan productos seguros para niños y mascotas?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Absolutamente. Todos nuestros productos están certificados y son seguros para uso en piscinas familiares. Además, ofrecemos opciones eco-friendly para familias con sensibilidades especiales.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Trabajan en mi zona?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "AtlanPool ofrece servicio de mantenimiento y limpieza de piscinas en el Santa Cruz de Tenerife y alrededores. Cubrimos Santa Cruz de Tenerife, La Laguna, El Rosario, San Cristóbal de La Laguna, Candelaria, El Sauzal, Santa Úrsula, Güímar, Tegueste, San Juan de la Rambla, La Esperanza e Arafo, además de múltiples zonas estratégicas. Contáctanos para confirmar disponibilidad en tu ubicación específica.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Puedo cambiar o cancelar mi plan en cualquier momento?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "El plan de mantenimiento premium tiene una permanencia de 12 meses, si en los primeros 30 días no estás conforme podrás cancelarlo sin haber pagado nada, ya que realizamos el servicio a mes vencido.",
-      },
-    },
-  ],
-};
-
 const faqs = [
   {
     question: "¿Qué incluye la revisión gratuita?",
@@ -86,7 +30,7 @@ const faqs = [
   {
     question: "¿Trabajan en mi zona?",
     answer:
-      "AtlanPool ofrece servicio en el Santa Cruz de Tenerife y alrededores. Cubrimos Santa Cruz de Tenerife, La Laguna, El Rosario, La Laguna, Candelaria, El Sauzal, Santa Úrsula, La Victoria, La Matanza, San Juan de la Rambla, La Esperanza e Arafo, además de múltiples zonas estratégicas. Contáctanos para confirmar disponibilidad en tu ubicación.",
+      "AtlanPool cubre toda la zona sur de Tenerife: Adeje, Costa Adeje, La Caleta, Las Américas, San Eugenio, Los Cristianos, Arona, El Médano, Abades, Granadilla de Abona, San Miguel de Abona, Golf del Sur y alrededores. Contáctanos para confirmar disponibilidad en tu ubicación.",
   },
   {
     question: "¿Puedo cambiar o cancelar mi plan en cualquier momento?",
