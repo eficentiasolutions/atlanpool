@@ -80,7 +80,7 @@ const ContactSection = dynamic(
 
 export const metadata: Metadata = {
   title: "Mantenimiento de Piscinas en Tenerife | AtlanPool",
-  description: "Mantenimiento profesional de piscinas en el Sur de Tenerife: Adeje, Arona, Granadilla y más. Balance químico, limpieza y reparaciones. Primera revisión GRATIS.",
+  description: "Mantenimiento profesional de piscinas en el Sur de Tenerife: Adeje, Las Américas, El Médano, Granadilla y más. Balance químico, limpieza y reparaciones. Primera revisión GRATIS.",
   keywords: [
     "mantenimiento de piscinas en el sur de Tenerife",
     "mantenimiento piscinas sur Tenerife",
@@ -107,7 +107,7 @@ const localBusinessSchema = {
   image: "https://www.atlanpool.es/og-image.jpg",
   "@id": "https://www.atlanpool.es",
   url: "https://www.atlanpool.es",
-  telephone: "+34643902918",
+  telephone: "+34631230569",
   email: "info@atlanpool.es",
   address: {
     "@type": "PostalAddress",

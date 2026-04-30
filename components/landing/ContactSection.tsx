@@ -108,7 +108,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold text-foreground text-sm md:text-base">Teléfono</h4>
                   <p className="text-muted-foreground text-xs md:text-base">
-                    <a href="tel:+34643902918" className="hover:text-secondary transition-colors">+34 643 902 918</a>
+                    <a href="tel:+34631230569" className="hover:text-secondary transition-colors">+34 631 230 569</a>
                   </p>
                 </div>
               </div>
@@ -131,7 +131,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground text-sm md:text-base">Zonas</h4>
-                  <p className="text-muted-foreground text-xs md:text-base">Sur de Tenerife (Adeje, Arona, Granadilla...)</p>
+                  <p className="text-muted-foreground text-xs md:text-base">Sur de Tenerife (Adeje, Las Américas, El Médano...)</p>
                 </div>
               </div>
 

@@ -8,7 +8,7 @@ import WhatsAppButton from "@/components/landing/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Mantenimiento de Piscinas en Tenerife | Servicio Profesional",
-  description: "Servicio profesional de mantenimiento de piscinas en Tenerife. Limpieza semanal, balance químico, revisión de equipos y reparaciones. cientos de clientes satisfechos. Primera revisión GRATIS. Llama al 643 902 918.",
+  description: "Servicio profesional de mantenimiento de piscinas en Tenerife. Limpieza semanal, balance químico, revisión de equipos y reparaciones. cientos de clientes satisfechos. Primera revisión GRATIS. Llama al 631 230 569.",
   keywords: [
     "mantenimiento de piscinas en Tenerife",
     "mantenimiento piscinas Tenerife",
@@ -59,7 +59,7 @@ const serviceSchema = {
     "@id": "https://www.atlanpool.es",
     name: "AtlanPool",
     url: "https://www.atlanpool.es",
-    telephone: "+34643902918",
+    telephone: "+34631230569",
     email: "info@atlanpool.es",
     address: {
       "@type": "PostalAddress",
@@ -74,15 +74,14 @@ const serviceSchema = {
   },
   areaServed: [
     { "@type": "City", name: "Adeje" },
-    { "@type": "City", name: "Arona" },
+    { "@type": "City", name: "La Caleta" },
+    { "@type": "City", name: "Las Américas" },
+    { "@type": "City", name: "San Eugenio" },
+    { "@type": "City", name: "El Médano" },
+    { "@type": "City", name: "Abades" },
     { "@type": "City", name: "Granadilla de Abona" },
     { "@type": "City", name: "San Miguel de Abona" },
-    { "@type": "City", name: "Guía de Isora" },
-    { "@type": "City", name: "Santiago del Teide" },
-    { "@type": "City", name: "Vilaflor" },
-    { "@type": "City", name: "Arico" },
-    { "@type": "City", name: "Los Cristianos" },
-    { "@type": "City", name: "Costa Adeje" },
+    { "@type": "City", name: "Golf del Sur" },
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -272,10 +271,10 @@ export default function MantenimientoPiscinasTenerife() {
                     Primera Revisión GRATIS
                   </Link>
                   <a
-                    href="tel:+34643902918"
+                    href="tel:+34631230569"
                     className="inline-flex items-center justify-center rounded-xl border-2 border-white bg-white/90 px-8 py-4 font-semibold text-secondary hover:bg-white transition-colors"
                   >
-                    📞 643 902 918
+                    📞 631 230 569
                   </a>
                 </div>
               </div>
@@ -694,7 +693,7 @@ export default function MantenimientoPiscinasTenerife() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://wa.me/34643902918?text=Hola,%20me%20interesa%20el%20servicio%20de%20mantenimiento%20de%20piscinas%20en%20Tenerife"
+                  href="https://wa.me/34631230569?text=Hola,%20me%20interesa%20el%20servicio%20de%20mantenimiento%20de%20piscinas%20en%20Tenerife"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-xl bg-[#25D366] px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 hover:bg-[#128C7E] transition-all"
@@ -703,10 +702,10 @@ export default function MantenimientoPiscinasTenerife() {
                     WhatsApp Directo
                 </a>
                 <a
-                  href="tel:+34643902918"
+                  href="tel:+34631230569"
                   className="inline-flex items-center justify-center rounded-xl border-2 border-white px-8 py-4 font-semibold text-white hover:bg-white/10 transition-colors"
                 >
-                  📞 643 902 918
+                  📞 631 230 569
                 </a>
               </div>
             </div>

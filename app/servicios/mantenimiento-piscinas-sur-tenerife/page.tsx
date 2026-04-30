@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Mantenimiento de Piscinas en el Sur de Tenerife | AtlanPool",
-    description: "Servicio profesional de mantenimiento de piscinas en el Sur de Tenerife. Adeje, Arona, Granadilla y más. Primera revisión GRATIS.",
+    description: "Servicio profesional de mantenimiento de piscinas en el Sur de Tenerife. Adeje, Las Américas, El Médano, Granadilla y más. Primera revisión GRATIS.",
     url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-sur-tenerife",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mantenimiento de Piscinas en el Sur de Tenerife | AtlanPool" }],
   },
@@ -32,7 +32,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Mantenimiento de Piscinas en el Sur de Tenerife",
-  description: "Servicio profesional de mantenimiento de piscinas en el Sur de Tenerife. Adeje, Arona, Granadilla de Abona, San Miguel de Abona, Guía de Isora, Santiago del Teide, Vilaflor y Arico.",
+  description: "Servicio profesional de mantenimiento de piscinas en el Sur de Tenerife. Adeje, La Caleta, Las Américas, San Eugenio, El Médano, Abades, Granadilla de Abona, San Miguel de Abona y Golf del Sur.",
   url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-sur-tenerife",
   aggregateRating: {
     "@type": "AggregateRating",
@@ -44,7 +44,7 @@ const serviceSchema = {
   provider: {
     "@type": "LocalBusiness",
     name: "AtlanPool",
-    telephone: "+34643902918",
+    telephone: "+34631230569",
     email: "info@atlanpool.es",
     address: {
       "@type": "PostalAddress",
@@ -60,13 +60,14 @@ const serviceSchema = {
   },
   areaServed: [
     { "@type": "City", name: "Adeje" },
-    { "@type": "City", name: "Arona" },
+    { "@type": "City", name: "La Caleta" },
+    { "@type": "City", name: "Las Américas" },
+    { "@type": "City", name: "San Eugenio" },
+    { "@type": "City", name: "El Médano" },
+    { "@type": "City", name: "Abades" },
     { "@type": "City", name: "Granadilla de Abona" },
     { "@type": "City", name: "San Miguel de Abona" },
-    { "@type": "City", name: "Guía de Isora" },
-    { "@type": "City", name: "Santiago del Teide" },
-    { "@type": "City", name: "Vilaflor" },
-    { "@type": "City", name: "Arico" },
+    { "@type": "City", name: "Golf del Sur" },
   ],
 };
 
@@ -87,7 +88,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "¿Qué municipios del Sur de Tenerife cubrís?",
-      acceptedAnswer: { "@type": "Answer", text: "Cubrimos todo el Sur de Tenerife: Adeje, Costa Adeje, Arona, Los Cristianos, Playa de las Américas, Granadilla de Abona, El Médano, San Miguel de Abona, Golf del Sur, Guía de Isora, Alcalá, Santiago del Teide, Los Gigantes, Puerto de Santiago, Vilaflor y Arico. Si tienes dudas sobre tu zona concreta, llámanos al 643 902 918." },
+      acceptedAnswer: { "@type": "Answer", text: "Cubrimos todo el Sur de Tenerife: Adeje, La Caleta, Las Américas, San Eugenio, El Médano, Abades, Granadilla de Abona, San Miguel de Abona y Golf del Sur. Si tienes dudas sobre tu zona concreta, llámanos al 631 230 569." },
     },
     {
       "@type": "Question",
@@ -102,7 +103,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "¿Ofrecéis revisión gratuita en el Sur de Tenerife?",
-      acceptedAnswer: { "@type": "Answer", text: "Sí, ofrecemos una primera revisión gratuita en toda la zona sur de Tenerife sin compromiso. Analizamos el estado del agua y de los equipos, y te damos un presupuesto personalizado. Llama al 643 902 918 o escríbenos por WhatsApp." },
+      acceptedAnswer: { "@type": "Answer", text: "Sí, ofrecemos una primera revisión gratuita en toda la zona sur de Tenerife sin compromiso. Analizamos el estado del agua y de los equipos, y te damos un presupuesto personalizado. Llama al 631 230 569 o escríbenos por WhatsApp." },
     },
   ],
 };
@@ -161,11 +162,11 @@ export default function MantenimientoPiscinasSurTenerife() {
                   <span className="text-secondary">Sur de Tenerife</span>
                 </h1>
                 <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Servicio profesional en Adeje, Arona, Granadilla de Abona, San Miguel de Abona, Guía de Isora, Santiago del Teide, Vilaflor y Arico. Técnico de referencia fijo, visitas semanales y agua cristalina garantizada.
+                  Servicio profesional en Adeje, La Caleta, Las Américas, San Eugenio, El Médano, Abades, Granadilla de Abona, San Miguel de Abona y Golf del Sur. Técnico de referencia fijo, visitas semanales y agua cristalina garantizada.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="https://wa.me/34643902918?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20el%20sur%20de%20Tenerife"
+                    href="https://wa.me/34631230569?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20el%20sur%20de%20Tenerife"
                     target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 hover:opacity-90 transition-all"
                     style={{ backgroundColor: "#25D366" }}
@@ -173,10 +174,10 @@ export default function MantenimientoPiscinasSurTenerife() {
                     {WA_SVG}
                     Primera Revisión GRATIS
                   </a>
-                  <a href="tel:+34643902918"
+                  <a href="tel:+34631230569"
                     className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-secondary bg-white px-8 py-4 font-semibold text-secondary hover:bg-secondary/5 transition-colors">
                     <Phone className="w-5 h-5" />
-                    643 902 918
+                    631 230 569
                   </a>
                 </div>
               </div>
@@ -204,7 +205,7 @@ export default function MantenimientoPiscinasSurTenerife() {
               </div>
               <p className="text-center text-muted-foreground text-sm mt-8">
                 ¿No ves tu municipio?{" "}
-                <a href="tel:+34643902918" className="text-secondary font-semibold hover:underline">Llámanos</a>{" "}
+                <a href="tel:+34631230569" className="text-secondary font-semibold hover:underline">Llámanos</a>{" "}
                 y confirmamos cobertura.
               </p>
             </div>
@@ -257,7 +258,7 @@ export default function MantenimientoPiscinasSurTenerife() {
               <p className="text-lg mb-8 opacity-90 max-w-xl mx-auto">Pide tu primera revisión gratuita sin compromiso. Te contactamos en menos de 24 horas.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://wa.me/34643902918?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20el%20sur%20de%20Tenerife"
+                  href="https://wa.me/34631230569?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20el%20sur%20de%20Tenerife"
                   target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 hover:opacity-90 transition-all"
                   style={{ backgroundColor: "#25D366" }}
@@ -265,9 +266,9 @@ export default function MantenimientoPiscinasSurTenerife() {
                   {WA_SVG}
                   WhatsApp Directo
                 </a>
-                <a href="tel:+34643902918"
+                <a href="tel:+34631230569"
                   className="inline-flex items-center justify-center rounded-xl border-2 border-white px-8 py-4 font-semibold text-white hover:bg-white/10 transition-colors">
-                  📞 643 902 918
+                  📞 631 230 569
                 </a>
               </div>
             </div>

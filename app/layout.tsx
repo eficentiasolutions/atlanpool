@@ -84,7 +84,7 @@ const organizationSchema = {
   name: "AtlanPool",
   url: "https://www.atlanpool.es",
   logo: "https://www.atlanpool.es/atlanpool-logo.png",
-  telephone: "+34643902918",
+  telephone: "+34631230569",
   email: "info@atlanpool.es",
   address: {
     "@type": "PostalAddress",

@@ -57,8 +57,8 @@ const Footer = () => {
             <div className="mt-4 space-y-1 text-white/60 text-xs md:text-sm">
               <p>📍 Santa Cruz de Tenerife, Tenerife</p>
               <p>
-                <a href="tel:+34643902918" className="hover:text-white transition-colors">
-                  📞 +34 643 902 918
+                <a href="tel:+34631230569" className="hover:text-white transition-colors">
+                  📞 +34 631 230 569
                 </a>
               </p>
               <p>

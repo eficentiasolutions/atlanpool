@@ -42,7 +42,7 @@ const serviceSchema = {
   provider: {
     "@type": "LocalBusiness",
     name: "AtlanPool",
-    telephone: "+34643902918",
+    telephone: "+34631230569",
     email: "info@atlanpool.es",
   },
   areaServed: {
@@ -193,14 +193,14 @@ export default function ServiciosPage() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="tel:+34643902918"
+                    href="tel:+34631230569"
                     className="btn-solid inline-flex items-center justify-center gap-2 py-4 px-8"
                   >
                     <Phone className="w-5 h-5" />
                     Revisión Gratuita
                   </a>
                   <a
-                    href="https://wa.me/34643902918?text=Hola,%20me%20interesa%20información%20sobre%20los%20servicios%20de%20piscinas%20en%20Tenerife"
+                    href="https://wa.me/34631230569?text=Hola,%20me%20interesa%20información%20sobre%20los%20servicios%20de%20piscinas%20en%20Tenerife"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 hover:opacity-90 transition-all"
@@ -299,7 +299,7 @@ export default function ServiciosPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://wa.me/34643902918?text=Hola,%20necesito%20asesoramiento%20sobre%20mi%20piscina%20en%20Tenerife"
+                  href="https://wa.me/34631230569?text=Hola,%20necesito%20asesoramiento%20sobre%20mi%20piscina%20en%20Tenerife"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 hover:opacity-90 transition-all"
@@ -311,10 +311,10 @@ export default function ServiciosPage() {
                   WhatsApp Directo
                 </a>
                 <a
-                  href="tel:+34643902918"
+                  href="tel:+34631230569"
                   className="inline-flex items-center justify-center rounded-xl border-2 border-white px-8 py-4 font-semibold text-white hover:bg-white/10 transition-colors"
                 >
-                  📞 643 902 918
+                  📞 631 230 569
                 </a>
               </div>
             </div>

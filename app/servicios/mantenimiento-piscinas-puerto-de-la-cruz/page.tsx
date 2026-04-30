@@ -7,7 +7,7 @@ import WhatsAppButton from "@/components/landing/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Mantenimiento de Piscinas en Santa Cruz de Tenerife | AtlanPool",
-  description: "Servicio profesional de mantenimiento y limpieza de piscinas en Santa Cruz de Tenerife, Tenerife. Técnico local, visitas semanales, balance químico y revisión de equipos. Primera revisión GRATIS. Llama al 643 902 918.",
+  description: "Servicio profesional de mantenimiento y limpieza de piscinas en Santa Cruz de Tenerife, Tenerife. Técnico local, visitas semanales, balance químico y revisión de equipos. Primera revisión GRATIS. Llama al 631 230 569.",
   keywords: [
     "mantenimiento piscinas Santa Cruz de Tenerife",
     "mantenimiento de piscinas Santa Cruz de Tenerife",
@@ -53,7 +53,7 @@ const serviceSchema = {
     "@id": "https://www.atlanpool.es",
     name: "AtlanPool",
     url: "https://www.atlanpool.es",
-    telephone: "+34643902918",
+    telephone: "+34631230569",
     email: "info@atlanpool.es",
     address: {
       "@type": "PostalAddress",
@@ -118,7 +118,7 @@ const faqSchema = {
       name: "¿Qué zonas de Santa Cruz de Tenerife cubrís?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "En Santa Cruz de Tenerife cubrimos todas las zonas: Costa Adeje, Torviscas, Fañabé, El Duque, San Eugenio, Las Américas, Playa Paraíso, Alcalá, Playa San Juan, Golf del Sur, El Médano y alrededores. Si tienes dudas sobre si llegamos a tu dirección concreta, llámanos al 643 902 918.",
+        text: "En Santa Cruz de Tenerife cubrimos todas las zonas: Costa Adeje, Torviscas, Fañabé, El Duque, San Eugenio, Las Américas, Playa Paraíso, Alcalá, Playa San Juan, Golf del Sur, El Médano y alrededores. Si tienes dudas sobre si llegamos a tu dirección concreta, llámanos al 631 230 569.",
       },
     },
     {
@@ -184,7 +184,7 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="https://wa.me/34643902918?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20Santa%20Cruz%20de%20Tenerife"
+                    href="https://wa.me/34631230569?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20Santa%20Cruz%20de%20Tenerife"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 hover:opacity-90 transition-all" style={{ backgroundColor: "#25D366" }}
@@ -193,11 +193,11 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
                     Primera Revisión GRATIS
                   </a>
                   <a
-                    href="tel:+34643902918"
+                    href="tel:+34631230569"
                     className="inline-flex items-center justify-center rounded-xl border-2 border-secondary bg-white px-8 py-4 font-semibold text-secondary hover:bg-secondary/5 transition-colors"
                   >
                     <Phone className="w-5 h-5 mr-2" />
-                    643 902 918
+                    631 230 569
                   </a>
                 </div>
               </div>
@@ -370,7 +370,7 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
                   },
                   {
                     q: "¿Qué zonas de Santa Cruz de Tenerife cubrís?",
-                    a: "En Santa Cruz de Tenerife cubrimos todas las zonas: Martiánez, La Paz, Punta Brava, El Mayorazgo, La Ranilla, Loro Parque, San Felipe, San Telmo, La Laguna, El Rosario y Cruz Santa. Si tienes dudas sobre si llegamos a tu dirección, llámanos al 643 902 918.",
+                    a: "En Santa Cruz de Tenerife cubrimos todas las zonas: Martiánez, La Paz, Punta Brava, El Mayorazgo, La Ranilla, Loro Parque, San Felipe, San Telmo, La Laguna, El Rosario y Cruz Santa. Si tienes dudas sobre si llegamos a tu dirección, llámanos al 631 230 569.",
                   },
                   {
                     q: "¿Con qué frecuencia necesita mantenimiento una piscina en Santa Cruz de Tenerife?",
@@ -441,7 +441,7 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://wa.me/34643902918?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20Santa%20Cruz%20de%20Tenerife"
+                  href="https://wa.me/34631230569?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20piscinas%20en%20Santa%20Cruz%20de%20Tenerife"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 font-semibold text-white shadow-lg hover:scale-105 hover:opacity-90 transition-all" style={{ backgroundColor: "#25D366" }}
@@ -450,10 +450,10 @@ export default function MantenimientoPiscinasPuertoDelaCruz() {
                     WhatsApp Directo
                 </a>
                 <a
-                  href="tel:+34643902918"
+                  href="tel:+34631230569"
                   className="inline-flex items-center justify-center rounded-xl border-2 border-white px-8 py-4 font-semibold text-white hover:bg-white/10 transition-colors"
                 >
-                  📞 643 902 918
+                  📞 631 230 569
                 </a>
               </div>
             </div>

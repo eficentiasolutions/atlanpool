@@ -81,7 +81,7 @@ export function generateReviewSchema(config: GoogleReviewsConfig) {
       "@type": "LocalBusiness",
       name: config.businessName,
       image: "https://www.atlanpool.es/og-image.jpg",
-      telephone: "+34643902918",
+      telephone: "+34631230569",
       email: "info@atlanpool.es",
       url: "https://www.atlanpool.es",
       sameAs: config.businessUrl,
