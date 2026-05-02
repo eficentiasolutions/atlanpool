@@ -6,13 +6,22 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
+        disallow: ['/gracias'],
       },
       {
-        userAgent: 'Googlebot',
+        userAgent: 'GPTBot',
         allow: '/',
       },
       {
-        userAgent: 'Bingbot',
+        userAgent: 'OAI-SearchBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'ClaudeBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'PerplexityBot',
         allow: '/',
       },
     ],

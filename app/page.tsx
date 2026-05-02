@@ -167,16 +167,15 @@ const localBusinessSchema = {
   email: "info@atlanpool.es",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Santa Cruz de Tenerife",
-    addressLocality: "Santa Cruz de Tenerife",
-    postalCode: "38001",
+    addressLocality: "Adeje",
+    postalCode: "38670",
     addressRegion: "Tenerife",
     addressCountry: "ES",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 28.4636,
-    longitude: -16.2519,
+    latitude: 28.12345,
+    longitude: -16.72890,
   },
   openingHoursSpecification: [
     {

@@ -47,13 +47,6 @@ const serviceSchema = {
   description: "Servicio profesional de mantenimiento de piscinas en Tenerife. Incluye limpieza, balance químico, revisión de equipos y mantenimiento preventivo. Más de cientos de familias satisfechas.",
   url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-tenerife",
 
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: 5.0,
-      reviewCount: 10,
-      bestRating: 5,
-      worstRating: 1,
-    },
   provider: {
     "@type": "LocalBusiness",
     "@id": "https://www.atlanpool.es",
@@ -63,10 +56,11 @@ const serviceSchema = {
     email: "info@atlanpool.es",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Santa Cruz de Tenerife",
+      addressLocality: "Adeje",
       addressRegion: "Tenerife",
       addressCountry: "ES",
-    },    sameAs: [
+    },
+    sameAs: [
       "https://www.facebook.com/share/1CMksZtzTW/",
       "https://www.instagram.com/atlanpool.es",
       "https://www.google.com/maps/search/?api=1&query=AtlanPool&query_place_id=ChIJ5y8Xg1PIRGMRXtzZcEEx0mA",
@@ -173,7 +167,7 @@ const faqSchema = {
       name: "¿Qué zonas del Sur de Tenerife cubrís?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AtlanPool ofrece servicio de mantenimiento de piscinas en el Santa Cruz de Tenerife y alrededores. Cubrimos Santa Cruz de Tenerife, La Laguna, El Rosario, San Cristóbal de La Laguna, Candelaria, El Sauzal, Santa Úrsula, Güímar, Tegueste, San Juan de la Rambla, La Esperanza, Arafo y zonas estratégicas como La Paz, Martiánez, El Mayorazgo, La Perdoma, Aguamansa, La Longuera, Cruz Santa, Mesa del Mar, Agua García y San Marcos. Si tu zona no aparece en la lista, consúltanos porque probablemente también lleguemos.",
+        text: "AtlanPool ofrece servicio de mantenimiento de piscinas en el Sur de Tenerife. Cubrimos Adeje, Costa Adeje, La Caleta de Adeje, Las Américas, San Eugenio, Los Cristianos, Arona, El Médano, Los Abrigos, Granadilla de Abona, San Miguel de Abona, Golf del Sur, Abades, Guía de Isora, Alcalá, Playa San Juan, Santiago del Teide y Los Gigantes. Si tu zona no aparece en la lista, consúltanos porque probablemente también lleguemos.",
       },
     },
     {
@@ -348,9 +342,9 @@ export default function MantenimientoPiscinasTenerife() {
                   <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-4">
                     <Droplets className="w-7 h-7 text-secondary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Cobertura en el Santa Cruz de Tenerife y alrededores</h3>
+                  <h3 className="text-xl font-bold mb-3">Cobertura en el Sur de Tenerife</h3>
                   <p className="text-muted-foreground">
-                    Damos servicio en el Santa Cruz de Tenerife y alrededores. Santa Cruz de Tenerife, La Laguna, El Rosario, La Laguna, Candelaria y más.
+                    Damos servicio en todo el Sur de Tenerife: Adeje, Las Américas, El Médano, Granadilla de Abona, San Miguel de Abona, Golf del Sur y más.
                   </p>
                 </div>
               </div>
@@ -576,7 +570,7 @@ export default function MantenimientoPiscinasTenerife() {
                   },
                   {
                     q: "¿Qué zonas del Sur de Tenerife cubrís?",
-                    a: "AtlanPool ofrece servicio de mantenimiento de piscinas en el Santa Cruz de Tenerife y alrededores. Cubrimos Santa Cruz de Tenerife, La Laguna, El Rosario, San Cristóbal de La Laguna, Candelaria, El Sauzal, Santa Úrsula, Güímar, Tegueste, San Juan de la Rambla, La Esperanza, Arafo y muchas más localidades del norte. Si tu zona no aparece, consúltanos.",
+                    a: "AtlanPool ofrece servicio de mantenimiento de piscinas en el Sur de Tenerife. Cubrimos Adeje, Costa Adeje, La Caleta de Adeje, Las Américas, San Eugenio, Los Cristianos, Arona, El Médano, Granadilla de Abona, San Miguel de Abona, Golf del Sur, Abades, Guía de Isora y más. Si tu zona no aparece, consúltanos.",
                   },
                   {
                     q: "¿Hacéis mantenimiento de piscinas comunitarias?",
@@ -610,7 +604,7 @@ export default function MantenimientoPiscinasTenerife() {
             <div className="container mx-auto px-4">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Mantenimiento de piscinas en el <span className="gradient-text">Santa Cruz de Tenerife y alrededores</span>
+                  Mantenimiento de piscinas en el <span className="gradient-text">Sur de Tenerife</span>
                 </h2>
                 <p className="text-muted-foreground text-lg">
                   Especialistas en mantenimiento de piscinas en los municipios del Sur de Tenerife
@@ -619,28 +613,24 @@ export default function MantenimientoPiscinasTenerife() {
 
               <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
                 {[
-                  "Santa Cruz de Tenerife",
-                  "La Laguna",
-                  "El Rosario",
-                  "San Cristóbal de La Laguna",
-                  "Candelaria",
-                  "El Sauzal",
-                  "Santa Úrsula",
-                  "Güímar",
-                  "Tegueste",
-                  "San Juan de la Rambla",
-                  "La Esperanza",
-                  "Arafo",
-                  "La Paz",
-                  "Martiánez",
-                  "El Mayorazgo",
-                  "La Perdoma",
-                  "Aguamansa",
-                  "La Longuera",
-                  "Cruz Santa",
-                  "Mesa del Mar",
-                  "Agua García",
-                  "San Marcos",
+                  "Adeje",
+                  "Costa Adeje",
+                  "La Caleta de Adeje",
+                  "Las Américas",
+                  "San Eugenio",
+                  "Los Cristianos",
+                  "Arona",
+                  "El Médano",
+                  "Los Abrigos",
+                  "Granadilla de Abona",
+                  "San Miguel de Abona",
+                  "Golf del Sur",
+                  "Abades",
+                  "Guía de Isora",
+                  "Alcalá",
+                  "Playa San Juan",
+                  "Santiago del Teide",
+                  "Los Gigantes",
                 ].map((zona) => (
                   <div
                     key={zona}

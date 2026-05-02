@@ -44,13 +44,6 @@ const serviceSchema = {
   description: "Servicio profesional de limpieza de piscinas en Tenerife. Limpieza completa de fondo, paredes, filtros y sistema de circulación. Resultado garantizado.",
   url: "https://www.atlanpool.es/servicios/limpieza-piscinas-tenerife",
 
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: 5.0,
-      reviewCount: 10,
-      bestRating: 5,
-      worstRating: 1,
-    },
   provider: {
     "@type": "LocalBusiness",
     "@id": "https://www.atlanpool.es",
@@ -60,10 +53,11 @@ const serviceSchema = {
     email: "info@atlanpool.es",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Santa Cruz de Tenerife",
+      addressLocality: "Adeje",
       addressRegion: "Tenerife",
       addressCountry: "ES",
-    },    sameAs: [
+    },
+    sameAs: [
       "https://www.facebook.com/share/1CMksZtzTW/",
       "https://www.instagram.com/atlanpool.es",
       "https://www.google.com/maps/search/?api=1&query=AtlanPool&query_place_id=ChIJ5y8Xg1PIRGMRXtzZcEEx0mA",
@@ -164,7 +158,7 @@ const faqSchema = {
       name: "¿En qué zonas del Sur de Tenerife limpiáis piscinas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AtlanPool ofrece servicio de limpieza de piscinas en el Santa Cruz de Tenerife y alrededores. Cubrimos Santa Cruz de Tenerife, La Laguna, El Rosario, San Cristóbal de La Laguna, Candelaria, El Sauzal, Santa Úrsula, Güímar, Tegueste, San Juan de la Rambla, La Esperanza, Arafo y muchas zonas estratégicas como La Paz, Martiánez, El Mayorazgo, La Perdoma, Aguamansa, La Longuera, Cruz Santa, Mesa del Mar, Agua García y San Marcos. Si tu zona no aparece, consúltanos.",
+        text: "AtlanPool ofrece servicio de limpieza de piscinas en el Sur de Tenerife. Cubrimos Adeje, Costa Adeje, La Caleta de Adeje, Las Américas, San Eugenio, Los Cristianos, Arona, El Médano, Los Abrigos, Granadilla de Abona, San Miguel de Abona, Golf del Sur, Abades, Guía de Isora, Alcalá, Playa San Juan, Santiago del Teide y Los Gigantes. Si tu zona no aparece, consúltanos.",
       },
     },
   ],
@@ -466,7 +460,7 @@ export default function LimpiezaPiscinasTenerife() {
                   },
                   {
                     q: "¿En qué zonas del Sur de Tenerife limpiáis piscinas?",
-                    a: "AtlanPool ofrece servicio de limpieza de piscinas en el Santa Cruz de Tenerife y alrededores. Cubrimos Santa Cruz de Tenerife, La Laguna, El Rosario, San Cristóbal de La Laguna, Candelaria, El Sauzal, Santa Úrsula, Güímar, Tegueste, San Juan de la Rambla, La Esperanza, Arafo y muchas más zonas del norte. Si tu zona no aparece, consúltanos.",
+                    a: "AtlanPool ofrece servicio de limpieza de piscinas en el Sur de Tenerife. Cubrimos Adeje, Costa Adeje, La Caleta de Adeje, Las Américas, San Eugenio, Los Cristianos, Arona, El Médano, Granadilla de Abona, San Miguel de Abona, Golf del Sur, Abades, Guía de Isora y más. Si tu zona no aparece, consúltanos.",
                   },
                 ].map((faq) => (
                   <details key={faq.q} className="group bg-card rounded-2xl shadow-sm">
@@ -488,7 +482,7 @@ export default function LimpiezaPiscinasTenerife() {
             <div className="container mx-auto px-4">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Limpieza de piscinas en el <span className="gradient-text">Santa Cruz de Tenerife y alrededores</span>
+                  Limpieza de piscinas en el <span className="gradient-text">Sur de Tenerife</span>
                 </h2>
                 <p className="text-muted-foreground text-lg">
                   Servicio profesional de limpieza de piscinas en los municipios del Sur de Tenerife
@@ -497,28 +491,24 @@ export default function LimpiezaPiscinasTenerife() {
 
               <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
                 {[
-                  "Santa Cruz de Tenerife",
-                  "La Laguna",
-                  "El Rosario",
-                  "San Cristóbal de La Laguna",
-                  "Candelaria",
-                  "El Sauzal",
-                  "Santa Úrsula",
-                  "Güímar",
-                  "Tegueste",
-                  "San Juan de la Rambla",
-                  "La Esperanza",
-                  "Arafo",
-                  "La Paz",
-                  "Martiánez",
-                  "El Mayorazgo",
-                  "La Perdoma",
-                  "Aguamansa",
-                  "La Longuera",
-                  "Cruz Santa",
-                  "Mesa del Mar",
-                  "Agua García",
-                  "San Marcos",
+                  "Adeje",
+                  "Costa Adeje",
+                  "La Caleta de Adeje",
+                  "Las Américas",
+                  "San Eugenio",
+                  "Los Cristianos",
+                  "Arona",
+                  "El Médano",
+                  "Los Abrigos",
+                  "Granadilla de Abona",
+                  "San Miguel de Abona",
+                  "Golf del Sur",
+                  "Abades",
+                  "Guía de Isora",
+                  "Alcalá",
+                  "Playa San Juan",
+                  "Santiago del Teide",
+                  "Los Gigantes",
                 ].map((zona) => (
                   <div
                     key={zona}
@@ -567,7 +557,7 @@ export default function LimpiezaPiscinasTenerife() {
                 ¿Tu piscina necesita una limpieza profesional?
               </h2>
               <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Solicita tu presupuesto gratuito sin compromiso. Llegamos al Santa Cruz de Tenerife y alrededores. Resultado garantizado.
+                Solicita tu presupuesto gratuito sin compromiso. Servicio en todo el Sur de Tenerife. Resultado garantizado.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

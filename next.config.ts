@@ -17,6 +17,12 @@ const nextConfig: NextConfig = {
         destination: '/servicios/mantenimiento-piscinas-sur-tenerife',
         permanent: true,
       },
+      // Puerto de la Cruz (página con identidad rota) → Sur de Tenerife
+      {
+        source: '/servicios/mantenimiento-piscinas-puerto-de-la-cruz',
+        destination: '/servicios/mantenimiento-piscinas-sur-tenerife',
+        permanent: true,
+      },
       // Old service URLs → estructura actual bajo /servicios/
       {
         source: '/mantenimiento-piscinas-tenerife',
