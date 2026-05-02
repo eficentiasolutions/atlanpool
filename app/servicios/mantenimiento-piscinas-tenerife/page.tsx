@@ -9,18 +9,6 @@ import WhatsAppButton from "@/components/landing/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Mantenimiento de Piscinas en Tenerife | Servicio Profesional",
   description: "Servicio profesional de mantenimiento de piscinas en Tenerife. Limpieza semanal, balance químico, revisión de equipos y reparaciones. cientos de clientes satisfechos. Primera revisión GRATIS. Llama al 631 230 569.",
-  keywords: [
-    "mantenimiento de piscinas en Tenerife",
-    "mantenimiento piscinas Tenerife",
-    "servicio mantenimiento piscina Tenerife",
-    "limpieza piscinas Tenerife",
-    "balance químico piscina",
-    "mantenimiento piscina precio Tenerife",
-    "empresa piscinas Tenerife",
-    "tratamiento agua piscina Tenerife",
-    "reparación piscinas Tenerife",
-    "mantenimiento piscina comunitaria Tenerife",
-  ],
   alternates: {
     canonical: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-tenerife",
   },

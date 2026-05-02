@@ -8,14 +8,6 @@ import WhatsAppButton from "@/components/landing/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Mantenimiento de Piscinas en el Sur de Tenerife | AtlanPool",
   description: "Mantenimiento profesional de piscinas en el Sur de Tenerife: Adeje, Arona, Granadilla, San Miguel, Guía de Isora y más. Primera revisión GRATIS.",
-  keywords: [
-    "mantenimiento piscinas sur Tenerife",
-    "mantenimiento piscinas Adeje",
-    "mantenimiento piscinas Arona",
-    "mantenimiento piscinas Granadilla de Abona",
-    "mantenimiento piscinas San Miguel de Abona",
-    "empresa piscinas sur Tenerife",
-  ],
   alternates: {
     canonical: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-sur-tenerife",
   },

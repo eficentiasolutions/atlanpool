@@ -14,7 +14,7 @@ const DataVizSection = dynamic(
   () => import("@/components/landing/DataVizSection"),
   {
     loading: () => (
-      <section className="py-20 bg-muted relative overflow-hidden">
+      <section className="py-20 bg-muted relative overflow-hidden" style={{ minHeight: '600px' }}>
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="animate-pulse inline-block h-8 w-48 bg-muted-foreground/20 rounded mb-4"></div>
@@ -30,7 +30,7 @@ const TestimonialsSection = dynamic(
   () => import("@/components/landing/TestimonialsSection"),
   {
     loading: () => (
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background" style={{ minHeight: '500px' }}>
         <div className="container mx-auto px-4">
           <div className="animate-pulse h-64 bg-muted/50 rounded-2xl"></div>
         </div>
@@ -43,7 +43,7 @@ const PricingSection = dynamic(
   () => import("@/components/landing/PricingSection"),
   {
     loading: () => (
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background" style={{ minHeight: '900px' }}>
         <div className="container mx-auto px-4">
           <div className="animate-pulse h-96 bg-muted/50 rounded-2xl"></div>
         </div>
@@ -56,7 +56,7 @@ const FAQSection = dynamic(
   () => import("@/components/landing/FAQSection"),
   {
     loading: () => (
-      <section className="py-20 bg-muted">
+      <section className="py-20 bg-muted" style={{ minHeight: '600px' }}>
         <div className="container mx-auto px-4">
           <div className="animate-pulse h-64 bg-muted/50 rounded-2xl"></div>
         </div>
@@ -69,7 +69,7 @@ const ContactSection = dynamic(
   () => import("@/components/landing/ContactSection"),
   {
     loading: () => (
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background" style={{ minHeight: '700px' }}>
         <div className="container mx-auto px-4">
           <div className="animate-pulse h-96 bg-muted/50 rounded-2xl"></div>
         </div>
@@ -81,14 +81,6 @@ const ContactSection = dynamic(
 export const metadata: Metadata = {
   title: "Mantenimiento de Piscinas en Tenerife | AtlanPool",
   description: "Mantenimiento profesional de piscinas en el Sur de Tenerife: Adeje, Las Américas, El Médano, Granadilla y más. Balance químico, limpieza y reparaciones. Primera revisión GRATIS.",
-  keywords: [
-    "mantenimiento de piscinas en el sur de Tenerife",
-    "mantenimiento piscinas sur Tenerife",
-    "limpieza piscinas sur Tenerife",
-    "servicio piscina Tenerife",
-    "balance químico piscina",
-    "mantenimiento piscina precio",
-  ],
   alternates: {
     canonical: "https://www.atlanpool.es",
   },

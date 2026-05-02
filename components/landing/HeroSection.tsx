@@ -14,6 +14,7 @@ const HeroSection = () => {
         alt="Piscina cristalina mantenida profesionalmente por AtlanPool"
         fill
         priority
+        quality={65}
         className="object-cover object-center"
         sizes="100vw"
       />

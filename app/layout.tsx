@@ -20,15 +20,7 @@ export const metadata: Metadata = {
     default: "AtlanPool | Mantenimiento Profesional de Piscinas",
     template: "%s | AtlanPool",
   },
-  description: "Servicio profesional de mantenimiento de piscinas en Santa Cruz de Tenerife. Recupera tu tiempo libre con AtlanPool. Primera inspección de balance químico GRATIS. Agua cristalina garantizada.",
-  keywords: [
-    "mantenimiento piscinas",
-    "limpieza piscinas",
-    "balance químico piscina",
-    "servicio piscinas Tenerife",
-    "mantenimiento piscinas Santa Cruz de Tenerife",
-    "piscinas Santa Cruz",
-  ],
+  description: "Servicio profesional de mantenimiento de piscinas en el Sur de Tenerife. Recupera tu tiempo libre con AtlanPool. Primera inspección de balance químico GRATIS. Agua cristalina garantizada.",
   authors: [{ name: "AtlanPool" }],
   creator: "AtlanPool",
   publisher: "AtlanPool",
@@ -48,7 +40,7 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: "https://www.atlanpool.es",
     title: "AtlanPool | Mantenimiento Profesional de Piscinas",
-    description: "¿Tu piscina es un placer o una carga? Recupera tu tiempo libre con nuestro servicio profesional en Santa Cruz de Tenerife. Inspección GRATIS.",
+    description: "¿Tu piscina es un placer o una carga? Recupera tu tiempo libre con nuestro servicio profesional en el Sur de Tenerife. Inspección GRATIS.",
     siteName: "AtlanPool",
     images: [
       {
@@ -81,6 +73,7 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://www.atlanpool.es/#organization",
   name: "AtlanPool",
   url: "https://www.atlanpool.es",
   logo: "https://www.atlanpool.es/atlanpool-logo.png",
@@ -88,7 +81,8 @@ const organizationSchema = {
   email: "info@atlanpool.es",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Santa Cruz de Tenerife",
+    addressLocality: "Adeje",
+    addressRegion: "Tenerife",
     addressCountry: "ES",
   },
   sameAs: [
@@ -96,6 +90,27 @@ const organizationSchema = {
     "https://www.instagram.com/atlanpool.es",
     "https://www.google.com/maps/search/?api=1&query=AtlanPool&query_place_id=ChIJ5y8Xg1PIRGMRXtzZcEEx0mA",
   ],
+};
+
+// WebSite Schema Markup
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.atlanpool.es/#website",
+  name: "AtlanPool",
+  url: "https://www.atlanpool.es",
+  publisher: {
+    "@id": "https://www.atlanpool.es/#organization",
+  },
+  inLanguage: "es",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://www.atlanpool.es/?s={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
 };
 
 export default function RootLayout({
@@ -106,11 +121,13 @@ export default function RootLayout({
   return (
     <html lang="es" className={poppins.variable}>
       <head>
-        {/* Resource hints — next/font self-hosts fonts, no external preconnect needed */}
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body className="min-h-screen bg-background font-sans antialiased">

@@ -9,16 +9,6 @@ import WhatsAppButton from "@/components/landing/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Limpieza de Piscinas en Tenerife | Servicio Profesional",
   description: "Servicio profesional de limpieza de piscinas en Tenerife. Limpieza de fondo, paredes, filtros y sistema completo. Resultado garantizado. Presupuesto GRATIS. Llama al 631 230 569.",
-  keywords: [
-    "limpieza de piscinas en Tenerife",
-    "limpieza piscinas Tenerife",
-    "limpieza fondo piscina",
-    "limpieza piscina precio Tenerife",
-    "servicio limpieza piscina profesional",
-    "empresa limpieza piscinas Tenerife",
-    "limpieza piscina verde Tenerife",
-    "puesta en marcha piscina Tenerife",
-  ],
   alternates: {
     canonical: "https://www.atlanpool.es/servicios/limpieza-piscinas-tenerife",
   },
