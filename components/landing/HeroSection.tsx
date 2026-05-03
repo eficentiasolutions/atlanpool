@@ -37,9 +37,6 @@ const HeroSection = () => {
           <h1
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-slate-800 leading-[1.1] mb-6 md:mb-8 tracking-tight animate-fade-in-up"
           >
-            <span className="block text-lg sm:text-xl md:text-2xl font-semibold text-secondary mb-3 tracking-wide">
-              Mantenimiento de Piscinas · Sur de Tenerife
-            </span>
             ¿Tu piscina es un{" "}
             <span className="font-extrabold text-secondary" style={{ WebkitTextStroke: '2px white', paintOrder: 'stroke fill' }}>
               placer
