@@ -6,23 +6,19 @@ import Footer from "@/components/landing/Footer";
 import WhatsAppButton from "@/components/landing/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Mantenimiento de Piscinas en Santa Cruz de Tenerife | AtlanPool",
-  description: "Servicio profesional de mantenimiento y limpieza de piscinas en Santa Cruz de Tenerife, Tenerife. Técnico local, visitas semanales, balance químico y revisión de equipos. Primera revisión GRATIS. Llama al 631 230 569.",
-  keywords: [
-    "mantenimiento piscinas Santa Cruz de Tenerife",
-    "mantenimiento de piscinas Santa Cruz de Tenerife",
-    "limpieza piscinas Santa Cruz de Tenerife",
-    "empresa piscinas Santa Cruz de Tenerife",
-    "servicio piscina Puerto Cruz Tenerife",
-    "mantenimiento piscina Santa Cruz de Tenerife",
-  ],
+  title: "Mantenimiento de Piscinas en el Sur de Tenerife | AtlanPool",
+  description: "Mantenimiento de piscinas en el Sur de Tenerife: Adeje, Las Américas, El Médano y más. Técnico fijo, balance químico y limpieza semanal. Primera revisión GRATIS.",
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: {
-    canonical: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-puerto-de-la-cruz",
+    canonical: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-sur-tenerife",
   },
   openGraph: {
-    title: "Mantenimiento de Piscinas en Santa Cruz de Tenerife | AtlanPool",
-    description: "Técnico local de piscinas en Santa Cruz de Tenerife. Visitas semanales, balance químico y resultado garantizado. Primera revisión GRATIS.",
-    url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-puerto-de-la-cruz",
+    title: "Mantenimiento de Piscinas en el Sur de Tenerife | AtlanPool",
+    description: "Mantenimiento profesional de piscinas en el Sur de Tenerife. Primera revisión GRATIS.",
+    url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-sur-tenerife",
     images: [
       {
         url: "/og-image.jpg",

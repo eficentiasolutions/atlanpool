@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "AtlanPool | Mantenimiento Profesional de Piscinas",
     template: "%s | AtlanPool",
   },
-  description: "Servicio profesional de mantenimiento de piscinas en el Sur de Tenerife. Recupera tu tiempo libre con AtlanPool. Primera inspección de balance químico GRATIS. Agua cristalina garantizada.",
+  description: "Mantenimiento de piscinas en el Sur de Tenerife. Balance químico, limpieza y técnico fijo. Primera inspección GRATIS. Agua cristalina garantizada.",
   authors: [{ name: "AtlanPool" }],
   creator: "AtlanPool",
   publisher: "AtlanPool",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: "https://www.atlanpool.es",
     title: "AtlanPool | Mantenimiento Profesional de Piscinas",
-    description: "¿Tu piscina es un placer o una carga? Recupera tu tiempo libre con nuestro servicio profesional en el Sur de Tenerife. Inspección GRATIS.",
+    description: "¿Tu piscina es un placer o una carga? Servicio de mantenimiento en el Sur de Tenerife. Técnico fijo, informe digital. Inspección GRATIS.",
     siteName: "AtlanPool",
     images: [
       {

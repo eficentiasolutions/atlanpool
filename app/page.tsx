@@ -80,7 +80,7 @@ const ContactSection = dynamic(
 
 export const metadata: Metadata = {
   title: "Mantenimiento de Piscinas en Tenerife | AtlanPool",
-  description: "Mantenimiento profesional de piscinas en el Sur de Tenerife: Adeje, Las Américas, El Médano, Granadilla y más. Balance químico, limpieza y reparaciones. Primera revisión GRATIS.",
+  description: "Mantenimiento de piscinas en el Sur de Tenerife: Adeje, Las Américas, El Médano y Granadilla. Balance químico y limpieza semanal. Primera revisión GRATIS.",
   alternates: {
     canonical: "https://www.atlanpool.es",
   },

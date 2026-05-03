@@ -46,11 +46,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.75,
     },
-    {
-      url: `${baseUrl}/servicios/mantenimiento-piscinas-puerto-de-la-cruz`,
-      lastModified: new Date('2026-04-25'),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-    },
   ]
 }

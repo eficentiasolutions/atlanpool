@@ -8,7 +8,7 @@ import WhatsAppButton from "@/components/landing/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Limpieza de Piscinas en Tenerife | Servicio Profesional",
-  description: "Servicio profesional de limpieza de piscinas en Tenerife. Limpieza de fondo, paredes, filtros y sistema completo. Resultado garantizado. Presupuesto GRATIS. Llama al 631 230 569.",
+  description: "Limpieza de piscinas en Tenerife: fondo, paredes, filtros y skimmers con productos certificados. Piscina verde recuperada en 24-48 h. Presupuesto GRATIS.",
   alternates: {
     canonical: "https://www.atlanpool.es/servicios/limpieza-piscinas-tenerife",
   },
