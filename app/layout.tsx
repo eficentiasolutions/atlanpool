@@ -66,6 +66,9 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/site.webmanifest",
+  verification: {
+    google: "lxNA62QSV5OWVr5n-CaE4A4uI_ayzD7LLn5lgONznSQ",
+  },
 };
 
 // Organization Schema Markup
