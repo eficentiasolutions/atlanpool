@@ -6,13 +6,13 @@ import Footer from "@/components/landing/Footer";
 import WhatsAppButton from "@/components/landing/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Mantenimiento de Piscinas en el Sur de Tenerife | AtlanPool",
+  title: "Mantenimiento de Piscinas en el Sur de Tenerife",
   description: "Mantenimiento profesional de piscinas en el Sur de Tenerife: Adeje, Arona, Granadilla, San Miguel, Guía de Isora y más. Primera revisión GRATIS.",
   alternates: {
     canonical: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-sur-tenerife",
   },
   openGraph: {
-    title: "Mantenimiento de Piscinas en el Sur de Tenerife | AtlanPool",
+    title: "Mantenimiento de Piscinas en el Sur de Tenerife",
     description: "Servicio profesional de mantenimiento de piscinas en el Sur de Tenerife. Adeje, Las Américas, El Médano, Granadilla y más. Primera revisión GRATIS.",
     url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-sur-tenerife",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Mantenimiento de Piscinas en el Sur de Tenerife | AtlanPool" }],
@@ -28,7 +28,7 @@ const serviceSchema = {
   url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-sur-tenerife",
   provider: {
     "@type": "LocalBusiness",
-    "@id": "https://www.atlanpool.es",
+    "@id": "https://www.atlanpool.es/#organization",
     name: "AtlanPool",
     url: "https://www.atlanpool.es",
     telephone: "+34631230569",

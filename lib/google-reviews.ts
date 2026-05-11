@@ -24,7 +24,7 @@ export interface GoogleReviewsConfig {
 export const googleReviewsConfig: GoogleReviewsConfig = {
   businessName: "AtlanPool",
   // PEGA AQUÍ LA URL DE TU GOOGLE BUSINESS PROFILE
-  businessUrl: "https://www.google.com/maps/search/?api=1&query=AtlanPool+Santa+Cruz+de+Tenerife",
+  businessUrl: "https://www.google.com/maps/search/?api=1&query=AtlanPool&query_place_id=ChIJ5y8Xg1PIRGMRXtzZcEEx0mA",
 
   // TU RATING ACTUAL EN GOOGLE (ej: 4.8, 5.0)
   rating: 5.0,
@@ -87,7 +87,8 @@ export function generateReviewSchema(config: GoogleReviewsConfig) {
       sameAs: config.businessUrl,
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Santa Cruz de Tenerife",
+        addressLocality: "Adeje",
+        addressRegion: "Tenerife",
         addressCountry: "ES",
       },
       aggregateRating: {

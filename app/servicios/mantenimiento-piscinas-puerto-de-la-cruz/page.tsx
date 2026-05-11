@@ -36,27 +36,20 @@ const serviceSchema = {
   name: "Mantenimiento de Piscinas en Santa Cruz de Tenerife",
   description: "Servicio profesional de mantenimiento y limpieza de piscinas en Santa Cruz de Tenerife, Tenerife. Técnico local con visitas semanales, balance químico completo y revisión de equipos.",
   url: "https://www.atlanpool.es/servicios/mantenimiento-piscinas-puerto-de-la-cruz",
-
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: 5.0,
-      reviewCount: 10,
-      bestRating: 5,
-      worstRating: 1,
-    },
   provider: {
     "@type": "LocalBusiness",
-    "@id": "https://www.atlanpool.es",
+    "@id": "https://www.atlanpool.es/#organization",
     name: "AtlanPool",
     url: "https://www.atlanpool.es",
     telephone: "+34631230569",
     email: "info@atlanpool.es",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Santa Cruz de Tenerife",
+      addressLocality: "Adeje",
       addressRegion: "Tenerife",
       addressCountry: "ES",
-    },  },
+    },
+  },
   areaServed: {
     "@type": "City",
     name: "Santa Cruz de Tenerife",

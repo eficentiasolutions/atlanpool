@@ -9,7 +9,7 @@ import Image from "next/image";
 const testimonials = [
   {
     name: "Carlos M.",
-    role: "Cliente en Santa Cruz de Tenerife",
+    role: "Cliente en Costa Adeje",
     initials: "CM",
     color: "bg-blue-600",
     rating: 5,
@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     name: "María José R.",
-    role: "Cliente en La Laguna",
+    role: "Cliente en Los Cristianos",
     initials: "MJ",
     color: "bg-teal-600",
     rating: 5,
@@ -27,7 +27,7 @@ const testimonials = [
   },
   {
     name: "Alejandro G.",
-    role: "Cliente en El Rosario",
+    role: "Cliente en El Médano",
     initials: "AG",
     color: "bg-indigo-600",
     rating: 5,
@@ -36,7 +36,7 @@ const testimonials = [
   },
   {
     name: "Lucía T.",
-    role: "Cliente en Candelaria",
+    role: "Cliente en Golf del Sur",
     initials: "LT",
     color: "bg-purple-600",
     rating: 5,
@@ -45,7 +45,7 @@ const testimonials = [
   },
   {
     name: "Antonio P.",
-    role: "Cliente en Santa Cruz de Tenerife",
+    role: "Cliente en Adeje",
     initials: "AP",
     color: "bg-cyan-700",
     rating: 5,
@@ -54,7 +54,7 @@ const testimonials = [
   },
   {
     name: "Sara F.",
-    role: "Comunidad de vecinos, La Laguna",
+    role: "Comunidad de vecinos, Granadilla de Abona",
     initials: "SF",
     color: "bg-blue-500",
     rating: 5,

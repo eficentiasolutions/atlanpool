@@ -153,7 +153,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "AtlanPool",
   image: "https://www.atlanpool.es/og-image.jpg",
-  "@id": "https://www.atlanpool.es",
+  "@id": "https://www.atlanpool.es/#organization",
   url: "https://www.atlanpool.es",
   telephone: "+34631230569",
   email: "info@atlanpool.es",

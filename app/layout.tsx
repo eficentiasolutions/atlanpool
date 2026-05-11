@@ -105,14 +105,6 @@ const websiteSchema = {
     "@id": "https://www.atlanpool.es/#organization",
   },
   inLanguage: "es",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: "https://www.atlanpool.es/?s={search_term_string}",
-    },
-    "query-input": "required name=search_term_string",
-  },
 };
 
 export default function RootLayout({
