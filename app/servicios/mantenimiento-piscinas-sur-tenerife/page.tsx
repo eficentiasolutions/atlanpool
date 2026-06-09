@@ -40,8 +40,8 @@ const serviceSchema = {
       addressCountry: "ES",
     },
     sameAs: [
-      "https://www.facebook.com/share/1CMksZtzTW/",
-      "https://www.instagram.com/atlanpool.es",
+      "https://www.facebook.com/profile.php?id=61590184198266",
+      "https://www.instagram.com/atlanpool",
       "https://www.google.com/maps/search/?api=1&query=AtlanPool&query_place_id=ChIJ5y8Xg1PIRGMRXtzZcEEx0mA",
     ],
   },

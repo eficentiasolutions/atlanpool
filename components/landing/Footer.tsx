@@ -25,8 +25,8 @@ const Footer = () => {
             <div className="flex gap-3 md:gap-4">
               {/* Redes sociales */}
               {[
-                { Icon: Facebook, href: "https://www.facebook.com/share/1CMksZtzTW/", label: "Facebook" },
-                { Icon: Instagram, href: "https://www.instagram.com/atlanpool.es", label: "Instagram" },
+                { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61590184198266", label: "Facebook" },
+                { Icon: Instagram, href: "https://www.instagram.com/atlanpool", label: "Instagram" },
               ].map(({ Icon, href, label }, index) => (
                 <a
                   key={index}
