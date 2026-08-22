@@ -41,6 +41,9 @@ yarn-error.log*
 .dev.vars
 .wrangler/
 
+# lock file — Cloudflare CI uses npm install (reads .npmrc) instead of npm ci
+package-lock.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
