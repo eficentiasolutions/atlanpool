@@ -4,13 +4,6 @@ const nextConfig: NextConfig = {
   // Redirects: non-www → www (canonical) + old URLs → new service URLs
   async redirects() {
     return [
-      // Canonical: forzar siempre https://www.atlanpool.es
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'atlanpool.es' }],
-        destination: 'https://www.atlanpool.es/:path*',
-        permanent: true,
-      },
       // Norte → Sur (zone update)
       {
         source: '/servicios/mantenimiento-piscinas-norte-tenerife',
