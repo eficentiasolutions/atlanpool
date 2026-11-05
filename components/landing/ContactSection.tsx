@@ -10,6 +10,8 @@ const ContactSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [selectedPlan, setSelectedPlan] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   useEffect(() => {
     const handleUrlParams = () => {
@@ -156,15 +158,39 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <form
-              action="https://formsubmit.co/info@atlanpool.es"
-              method="POST"
               className="bg-card rounded-2xl md:rounded-3xl shadow-sm p-5 md:p-8"
+              onSubmit={async (e) => {
+                e.preventDefault();
+                setSubmitting(true);
+                setSubmitError("");
+                const fd = new FormData(e.currentTarget);
+                try {
+                  const res = await fetch("https://correo-compartido-web.agencia-ia-tech.workers.dev", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                      name: fd.get("name"),
+                      email: fd.get("email"),
+                      phone: fd.get("phone"),
+                      message: fd.get("message"),
+                      website: fd.get("website") ?? "",
+                      plan: selectedPlan || "Revisión Gratuita (General)",
+                    }),
+                  });
+                  if (res.ok) {
+                    window.location.href = "/gracias";
+                  } else {
+                    setSubmitError("Ha ocurrido un error. Por favor, inténtalo de nuevo o llámanos.");
+                  }
+                } catch {
+                  setSubmitError("Ha ocurrido un error. Por favor, inténtalo de nuevo o llámanos.");
+                } finally {
+                  setSubmitting(false);
+                }
+              }}
             >
-              <input type="hidden" name="_next" value={`${typeof window !== "undefined" ? window.location.origin : ""}/gracias`} />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_subject" value={`Nuevo contacto desde AtlanPool ${selectedPlan ? `- Interesado en ${selectedPlan}` : ''}`} />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="Plan_Seleccionado" value={selectedPlan || "Revisión Gratuita (General)"} />
+              {/* Honeypot anti-bot: debe permanecer vacío */}
+              <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
 
               {selectedPlan && (
                 <div className="mb-4 md:mb-6 bg-secondary/10 border border-secondary/20 rounded-lg p-3">
@@ -243,12 +269,17 @@ const ContactSection = () => {
                 </label>
               </div>
 
+              {submitError && (
+                <p role="alert" className="mb-3 text-sm text-destructive text-center">{submitError}</p>
+              )}
+
               <button
                 type="submit"
-                className="btn-solid w-full flex items-center justify-center gap-2 md:gap-3"
+                disabled={submitting}
+                className="btn-solid w-full flex items-center justify-center gap-2 md:gap-3 disabled:opacity-60"
               >
                 <Send className="w-4 h-4 md:w-5 md:h-5" />
-                {selectedPlan ? `Solicitar ${selectedPlan}` : 'Solicitar Revisión GRATIS'}
+                {submitting ? 'Enviando...' : selectedPlan ? `Solicitar ${selectedPlan}` : 'Solicitar Revisión GRATIS'}
               </button>
 
               <p className="text-center text-xs md:text-sm text-muted-foreground mt-3 md:mt-4">
